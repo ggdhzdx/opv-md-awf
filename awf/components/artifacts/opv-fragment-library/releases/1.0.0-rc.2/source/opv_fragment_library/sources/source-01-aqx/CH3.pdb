@@ -1,0 +1,122 @@
+REMARK   1 File created by GaussView 6.1.1
+HETATM    1  C1  CH3     1      -1.803  -3.589  -0.395                       C
+HETATM    2  C2  CH3     1      -1.844  -4.244   0.820                       C
+HETATM    3  N1  CH3     1      -0.681  -2.806  -0.427                       N
+HETATM    4  C3  CH3     1      -0.004  -2.943   0.754                       C
+HETATM    5  C4  CH3     1      -0.697  -3.832   1.552                       C
+HETATM    6  C5  CH3     1      -0.313  -1.897  -1.490                       C
+HETATM    7  C6  CH3     1      -0.548  -0.425  -1.141                       C
+HETATM    8  C7  CH3     1      -0.038   0.488  -2.259                       C
+HETATM    9  C8  CH3     1       1.354   1.087  -2.064                       C
+HETATM   10  C9  CH3     1      -2.019  -0.171  -0.815                       C
+HETATM   11  C10 CH3     1       1.524   1.871  -0.771                       C
+HETATM   12  C11 CH3     1       2.887   2.556  -0.658                       C
+HETATM   13  C12 CH3     1       3.059   3.290   0.644                       C
+HETATM   14  C13 CH3     1      -2.305   1.188  -0.175                       C
+HETATM   15  C14 CH3     1      -3.751   1.340   0.212                       C
+HETATM   16  C15 CH3     1       3.542   2.637   1.783                       C
+HETATM   17  C16 CH3     1       3.650   3.298   3.003                       C
+HETATM   18  C17 CH3     1       3.279   4.642   3.133                       C
+HETATM   19  C18 CH3     1       2.793   5.295   1.994                       C
+HETATM   20  C19 CH3     1       2.685   4.632   0.773                       C
+HETATM   21  C20 CH3     1      -4.243   0.762   1.390                       C
+HETATM   22  C21 CH3     1      -5.589   0.859   1.730                       C
+HETATM   23  C22 CH3     1      -6.499   1.537   0.907                       C
+HETATM   24  C23 CH3     1      -6.007   2.110  -0.270                       C
+HETATM   25  C24 CH3     1      -4.658   2.013  -0.611                       C
+HETATM   26  H1  CH3     1       0.746  -2.066  -1.736                       H
+HETATM   27  H2  CH3     1      -0.896  -2.169  -2.383                       H
+HETATM   28  H3  CH3     1       0.033  -0.212  -0.225                       H
+HETATM   29  H4  CH3     1      -0.060  -0.074  -3.210                       H
+HETATM   30  H5  CH3     1      -0.755   1.316  -2.383                       H
+HETATM   31  H6  CH3     1       2.126   0.298  -2.114                       H
+HETATM   32  H7  CH3     1       1.566   1.752  -2.918                       H
+HETATM   33  H8  CH3     1      -2.624  -0.278  -1.734                       H
+HETATM   34  H9  CH3     1      -2.372  -0.955  -0.126                       H
+HETATM   35  H10 CH3     1       0.728   2.632  -0.688                       H
+HETATM   36  H11 CH3     1       1.394   1.208   0.101                       H
+HETATM   37  H12 CH3     1       3.680   1.796  -0.761                       H
+HETATM   38  H13 CH3     1       3.013   3.256  -1.500                       H
+HETATM   39  H14 CH3     1      -1.669   1.298   0.720                       H
+HETATM   40  H15 CH3     1      -2.027   2.003  -0.861                       H
+HETATM   41  H16 CH3     1       3.840   1.585   1.712                       H
+HETATM   42  H17 CH3     1       4.031   2.759   3.876                       H
+HETATM   43  H18 CH3     1       2.493   6.344   2.065                       H
+HETATM   44  H19 CH3     1       2.302   5.169  -0.100                       H
+HETATM   45  H20 CH3     1      -3.556   0.225   2.051                       H
+HETATM   46  H21 CH3     1      -5.943   0.398   2.657                       H
+HETATM   47  H22 CH3     1      -6.693   2.644  -0.933                       H
+HETATM   48  H23 CH3     1      -4.302   2.473  -1.538                       H
+HETATM   49  H24 CH3     1      -2.485  -3.616  -1.243                       H
+HETATM   50  H25 CH3     1      -2.612  -4.945   1.142                       H
+HETATM   51  H26 CH3     1      -0.402  -4.156   2.549                       H
+HETATM   52  H27 CH3     1       0.924  -2.401   0.931                       H
+HETATM   53  C25 CH3     1      -7.945   1.657   1.293                       C
+HETATM   54  H28 CH3     1      -8.076   2.370   2.124                       H
+HETATM   55  H29 CH3     1      -8.558   2.011   0.453                       H
+HETATM   56  H30 CH3     1      -8.352   0.692   1.631                       H
+HETATM   57  C26 CH3     1       3.429   5.365   4.440                       C
+HETATM   58  H31 CH3     1       3.290   4.687   5.295                       H
+HETATM   59  H32 CH3     1       4.436   5.807   4.535                       H
+HETATM   60  H33 CH3     1       2.704   6.187   4.532                       H
+END
+CONECT    1    3   49    2
+CONECT    2    1    5   50
+CONECT    3    1    4    6
+CONECT    4    3    5   52
+CONECT    5    2    4   51
+CONECT    6    3   27    7   26
+CONECT    7    6    8   10   28
+CONECT    8    7   29   30    9
+CONECT    9    8   11   31   32
+CONECT   10    7   33   14   34
+CONECT   11    9   12   35   36
+CONECT   12   11   13   37   38
+CONECT   13   12   16   20
+CONECT   14   10   40   15   39
+CONECT   15   14   25   21
+CONECT   16   13   17   41
+CONECT   17   16   42   18
+CONECT   18   17   19   57
+CONECT   19   18   20   43
+CONECT   20   13   19   44
+CONECT   21   15   22   45
+CONECT   22   21   23   46
+CONECT   23   22   24   53
+CONECT   24   23   47   25
+CONECT   25   15   24   48
+CONECT   26    6
+CONECT   27    6
+CONECT   28    7
+CONECT   29    8
+CONECT   30    8
+CONECT   31    9
+CONECT   32    9
+CONECT   33   10
+CONECT   34   10
+CONECT   35   11
+CONECT   36   11
+CONECT   37   12
+CONECT   38   12
+CONECT   39   14
+CONECT   40   14
+CONECT   41   16
+CONECT   42   17
+CONECT   43   19
+CONECT   44   20
+CONECT   45   21
+CONECT   46   22
+CONECT   47   24
+CONECT   48   25
+CONECT   49    1
+CONECT   50    2
+CONECT   51    5
+CONECT   52    4
+CONECT   53   23   54   55   56
+CONECT   54   53
+CONECT   55   53
+CONECT   56   53
+CONECT   57   18   58   59   60
+CONECT   58   57
+CONECT   59   57
+CONECT   60   57

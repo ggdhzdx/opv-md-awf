@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "replicas_minimum": 3,
+  "packing": {
+    "initial_box_nm": 45.0,
+    "tolerance_A": 2.0,
+    "matched_seed_within_replica": true,
+    "independent_ancestry_across_replicas": true
+  },
+  "stages": [
+    {"id": "energy_minimization", "integrator": "steep", "emtol_kJ_mol_nm": 100.0, "nsteps_max": 50000},
+    {"id": "compression_c01_c10", "ensemble": "NPT", "duration_ns_each": 1.0, "pressure_bar": 10.0, "temperature_K_schedule": [300, 500, 500, 300]},
+    {"id": "relax", "ensemble": "NPT", "duration_ns": 5.0, "temperature_K": 300.0, "pressure_bar": 1.0},
+    {"id": "anneal_01_03", "ensemble": "NPT", "cycles": 3, "duration_ns_each": 5.0, "segments_ns": [0.5, 1.0, 1.0, 2.5], "temperature_K": [300, 500, 500, 300], "pressure_bar": 1.0},
+    {"id": "hold", "ensemble": "NPT", "duration_ns": 10.0, "temperature_K": 300.0, "pressure_bar": 1.0}
+  ],
+  "compression_runtime_defaults": {
+    "dt_ps": 0.002,
+    "nstlist": 40,
+    "nstpcouple": 20,
+    "tau_p_ps": 1.0
+  },
+  "interpretation": "fixed-protocol conditioned quenched morphology; not thermodynamic equilibrium"
+}
+

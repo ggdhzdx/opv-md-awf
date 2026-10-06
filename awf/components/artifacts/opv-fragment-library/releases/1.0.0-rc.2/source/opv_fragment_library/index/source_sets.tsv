@@ -1,0 +1,14 @@
+source_id	source_path	category	exists	copied_file_count
+source-01-aqx	bundled:sources/source-01-aqx	nfa	True	27
+source-02-l8bo	bundled:sources/source-02-l8bo	nfa	True	11
+source-03-qde	bundled:sources/source-03-qde	nfa	True	13
+source-04-stbu	bundled:sources/source-04-stbu	nfa	True	14
+source-05-nfa-forcefield	bundled:sources/source-05-nfa-forcefield	nfa_or_generic	True	20
+source-06-pm6	bundled:sources/source-06-pm6	polymer_or_mixed	True	15
+source-07-nfa	bundled:sources/source-07-nfa	nfa	True	10
+source-08-nfa	bundled:sources/source-08-nfa	nfa	True	14
+source-09-nfa	bundled:sources/source-09-nfa	nfa	True	12
+source-10-l8-derivatives	bundled:sources/source-10-l8-derivatives	nfa_current	True	15
+source-11-p3ht	bundled:sources/source-11-p3ht	polymer	True	11
+source-12-legacy	bundled:sources/source-12-legacy	unknown	True	4
+source-13-nfa	bundled:sources/source-13-nfa	nfa_or_generic	True	17

@@ -1,0 +1,131 @@
+{
+  "method": "ztop GAFF2 plus Multiwfn RESP, equilibrium bond and angle refinement (-r e)",
+  "cut_site": "X2:6-3",
+  "fragments": [
+    {
+      "name": "Cb1T",
+      "status": "PASS",
+      "checks": {
+        "top_atom_count": true,
+        "pdb_atom_count": true,
+        "atom_numbering_contiguous": true,
+        "atom_order_elements": true,
+        "bond_count": true,
+        "bond_set": true,
+        "planned_cut_bond": true,
+        "neutral_charge": true,
+        "retained_side_heavy_atoms": true,
+        "retained_side_formula": true,
+        "cyclobutane_types": true,
+        "pdb_matches_final_gaussian_geometry": true,
+        "tleap_no_fatal_error": true
+      },
+      "metrics": {
+        "atoms": 22,
+        "bonds": 23,
+        "total_charge_e": 0.0,
+        "coordinate_aligned_rmsd_A": 0.000523,
+        "atom_type_counts": {
+          "c2": 4,
+          "c3": 1,
+          "cy": 4,
+          "h4": 1,
+          "ha": 2,
+          "hc": 9,
+          "ss": 1
+        },
+        "retained_side_heavy_atoms": 5,
+        "retained_side_formula": "C5H9"
+      },
+      "outputs": {
+        "top": "private-source://redacted/Cb1T.top",
+        "top_sha256": "9c7c547d2d0ad2562c222e287133f1b62822c370efb44cd8f120b1dd62f7a7d3",
+        "pdb": "private-source://redacted/Cb1T.pdb",
+        "pdb_sha256": "973d5862a995310e02e384fb90d4f24e33a4a5436245e05325b4156c1f4b4025"
+      }
+    },
+    {
+      "name": "Cb3T",
+      "status": "PASS",
+      "checks": {
+        "top_atom_count": true,
+        "pdb_atom_count": true,
+        "atom_numbering_contiguous": true,
+        "atom_order_elements": true,
+        "bond_count": true,
+        "bond_set": true,
+        "planned_cut_bond": true,
+        "neutral_charge": true,
+        "retained_side_heavy_atoms": true,
+        "retained_side_formula": true,
+        "cyclobutane_types": true,
+        "pdb_matches_final_gaussian_geometry": true,
+        "tleap_no_fatal_error": true
+      },
+      "metrics": {
+        "atoms": 28,
+        "bonds": 29,
+        "total_charge_e": -1e-06,
+        "coordinate_aligned_rmsd_A": 0.000512,
+        "atom_type_counts": {
+          "c2": 4,
+          "c3": 3,
+          "cy": 4,
+          "h4": 1,
+          "ha": 2,
+          "hc": 13,
+          "ss": 1
+        },
+        "retained_side_heavy_atoms": 7,
+        "retained_side_formula": "C7H13"
+      },
+      "outputs": {
+        "top": "private-source://redacted/Cb3T.top",
+        "top_sha256": "08b58571286de0dcae82004b70ed9dad6d210277c59911d7abe975efb3951555",
+        "pdb": "private-source://redacted/Cb3T.pdb",
+        "pdb_sha256": "063c4d7a01790af132d331f0c9ce7d59b7dc8491a5727cc7df14d714188dd3ea"
+      }
+    },
+    {
+      "name": "C46T_sp3",
+      "status": "PASS",
+      "checks": {
+        "top_atom_count": true,
+        "pdb_atom_count": true,
+        "atom_numbering_contiguous": true,
+        "atom_order_elements": true,
+        "bond_count": true,
+        "bond_set": true,
+        "planned_cut_bond": true,
+        "neutral_charge": true,
+        "retained_side_heavy_atoms": true,
+        "retained_side_formula": true,
+        "cyclobutane_types": true,
+        "pdb_matches_final_gaussian_geometry": true,
+        "tleap_no_fatal_error": true
+      },
+      "metrics": {
+        "atoms": 51,
+        "bonds": 51,
+        "total_charge_e": -3e-06,
+        "coordinate_aligned_rmsd_A": 0.000512,
+        "atom_type_counts": {
+          "c2": 4,
+          "c3": 14,
+          "h4": 1,
+          "ha": 2,
+          "hc": 29,
+          "ss": 1
+        },
+        "retained_side_heavy_atoms": 14,
+        "retained_side_formula": "C14H29"
+      },
+      "outputs": {
+        "top": "private-source://redacted/C46T_sp3.top",
+        "top_sha256": "a8d9689dfb3f94b3b285c5e9db68e510f0781d33c525e4c83f88825da37c2fd8",
+        "pdb": "private-source://redacted/C46T_sp3.pdb",
+        "pdb_sha256": "52982426ffab5f13c48c4b2652d878ab5c901b236c78bace8affd814ca6304d0"
+      }
+    }
+  ]
+}

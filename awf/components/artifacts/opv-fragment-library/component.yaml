@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "artifact.opv-fragment-library",
+  "kind": "artifact",
+  "releases": {
+    "1.0.0-rc.2": {
+      "status": "candidate",
+      "observed_at": "2026-10-05",
+      "source_snapshot": "components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source",
+      "tree_sha256": "77e555173e9720c73d2bb19aefda4955955d2d3752ab9505abd689b6c1a67eac",
+      "predecessor": "artifact.opv-fragment-library@1.0.0-rc.1",
+      "provenance": "Public-distribution snapshot derived from the verified internal rc.1 library; Gaussian provenance, private paths, and person-identifying source labels are excluded or neutralized.",
+      "capabilities": [
+        "91-record-ztop-fragment-catalog",
+        "10-reusable-molecule-packages",
+        "neutral-source-set-and-name-collision-provenance",
+        "bundled-offline-opv-md-resource"
+      ],
+      "limitations": [
+        "availability proves file/reference integrity only, not chemical compatibility",
+        "historical source sets require context-specific attachment, valence, charge, atom-order, and force-field review",
+        "Gaussian provenance and private source paths are intentionally excluded",
+        "external GROMACS, Packmol, ztop, and project adapters are not bundled"
+      ],
+      "download_policy": "Bundled in the AWF core Release; no external download is required.",
+      "payloads": [
+        {
+          "id": "opv-fragment-library-public",
+          "source": "Privacy-sanitized public successor derived from the verified 2026-09-15 source-preserving library",
+          "path": "components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library",
+          "kind": "tree",
+          "file_bytes": 8808157,
+          "tree_sha256": "3a56fe6026dc523f5670f9dcd62716cc81cd11a5dc8d6ce93b7bccaa3d22f074",
+          "expected_download_bytes_this_task": 0,
+          "bundled": true
+        }
+      ]
+    }
+  }
+}

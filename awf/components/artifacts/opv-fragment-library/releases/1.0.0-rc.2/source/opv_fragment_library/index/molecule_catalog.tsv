@@ -1,0 +1,11 @@
+molecule_id	category	resource_dir	status	source
+L8_4-Cb	nfa	molecules/nfa/L8_4-Cb	validated_target_assembly	bundled:molecules/nfa/L8_4-Cb
+L8-Cb4	nfa	molecules/nfa/L8-Cb4	validated_target_assembly	bundled:molecules/nfa/L8-Cb4
+L8BO	nfa	molecules/nfa/L8BO	historical_reference	bundled:molecules/nfa/L8BO
+D18_1mer	polymer	molecules/polymer/D18_1mer	historical_parameterization_reference	bundled:molecules/polymer/D18_1mer
+D18_3mer	polymer	molecules/polymer/D18_3mer	historical_parameterization_reference	bundled:molecules/polymer/D18_3mer
+D18_6mer	polymer	molecules/polymer/D18_6mer	historical_MD_reference	bundled:molecules/polymer/D18_6mer
+D18_8mer	polymer	molecules/polymer/D18_8mer	historical_parameterization_reference	bundled:molecules/polymer/D18_8mer
+D18_10mer	polymer	molecules/polymer/D18_10mer	historical_parameterization_reference	bundled:molecules/polymer/D18_10mer
+P3HT_PHT	polymer	molecules/polymer/P3HT_PHT	historical_fragment_reference	bundled:molecules/polymer/P3HT_PHT
+PM6	polymer_or_mixed	molecules/polymer_or_mixed/PM6	historical_reference_needs_audit	bundled:molecules/polymer_or_mixed/PM6

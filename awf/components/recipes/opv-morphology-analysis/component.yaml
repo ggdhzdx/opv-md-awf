@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "recipe.opv-morphology-analysis",
+  "kind": "recipe",
+  "releases": {
+    "1.0.0-rc.1": {
+      "status": "candidate",
+      "observed_at": "2026-09-24",
+      "instructions": "releases/1.0.0-rc.1/source/RECIPE.md",
+      "protocol": "releases/1.0.0-rc.1/source/protocol.json",
+      "source_snapshot": "components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source",
+      "tree_sha256": "088bd5fac87bdb1298efbabb4358bee2a98a6f681397cbf8310072537917225d",
+      "capabilities": [
+        "parallel-bulkgraph-and-phase-separation-orchestration",
+        "svd-planar-stacking-and-adaptive-overlap-area",
+        "periodic-cic-density-and-fft-structure-factor",
+        "box-scale-limited-and-unresolved-peak-gates",
+        "replica-first-paired-contrast-hierarchy"
+      ],
+      "limitations": [
+        "requires a project-specific molecular, topology, and trajectory adapter",
+        "does not bundle trajectories, topologies, or project outputs",
+        "candidate pending independent adapter and real multi-system cohort acceptance"
+      ],
+      "provenance": "Generalized from audited D18/NFA BulkGraph and phase-separation analysis implementations and regression suites."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "workflow": "gromacs-organic-blend-zc",
+  "workflow_release": "1.0.0-rc.6",
+  "locked_at": "2026-10-05",
+  "components": {
+    "artifact.opv-fragment-library": "1.0.0-rc.2",
+    "recipe.gromacs-organic-blend-production": "1.0.0-rc.2",
+    "recipe.opv-morphology-analysis": "1.0.0-rc.1",
+    "skill.analyze-opv-morphology": "1.0.0-rc.1",
+    "skill.run-gromacs-organic-blend": "1.0.0-rc.1",
+    "tool.opv-library": "1.0.0-rc.2"
+  }
+}

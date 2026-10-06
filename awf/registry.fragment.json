@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "components": [
+    {
+      "descriptor": "components/artifacts/opv-fragment-library/component.yaml",
+      "id": "artifact.opv-fragment-library",
+      "kind": "artifact"
+    },
+    {
+      "descriptor": "components/recipes/gromacs-organic-blend-production/component.yaml",
+      "id": "recipe.gromacs-organic-blend-production",
+      "kind": "recipe"
+    },
+    {
+      "descriptor": "components/recipes/opv-morphology-analysis/component.yaml",
+      "id": "recipe.opv-morphology-analysis",
+      "kind": "recipe"
+    },
+    {
+      "descriptor": "components/skills/analyze-opv-morphology/component.yaml",
+      "id": "skill.analyze-opv-morphology",
+      "kind": "skill"
+    },
+    {
+      "descriptor": "components/skills/run-gromacs-organic-blend/component.yaml",
+      "id": "skill.run-gromacs-organic-blend",
+      "kind": "skill"
+    },
+    {
+      "descriptor": "components/tools/opv-library/component.yaml",
+      "id": "tool.opv-library",
+      "kind": "tool"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "gromacs-organic-blend-zc",
+      "display_name": "AWF GROMACS Organic Blend",
+      "aliases": [
+        "opv-md"
+      ],
+      "descriptor": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/workflow.yaml",
+      "descriptor_sha256": "0b0009bda9d2d21851306fb3c76d5d90185ae589983082c725693bdbcb9c81de",
+      "lock": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/versions.lock",
+      "lock_sha256": "135b109fd276c694e56edd3c8606a1d8198ecfd1ea49d1cb9969d161c116e53f",
+      "releases": {
+        "1.0.0-rc.6": {
+          "descriptor": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/workflow.yaml",
+          "descriptor_sha256": "0b0009bda9d2d21851306fb3c76d5d90185ae589983082c725693bdbcb9c81de",
+          "lock": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/versions.lock",
+          "lock_sha256": "135b109fd276c694e56edd3c8606a1d8198ecfd1ea49d1cb9969d161c116e53f",
+          "status": "candidate"
+        }
+      }
+    }
+  ]
+}

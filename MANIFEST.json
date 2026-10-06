@@ -1,0 +1,1011 @@
+{
+  "schema_version": 1,
+  "workflow": "gromacs-organic-blend-zc",
+  "workflow_release": "1.0.0-rc.6",
+  "files": {
+    ".gitignore": {
+      "bytes": 25,
+      "sha256": "1add4d1fe11afa97bb8684ddfb7a362938df465094367a04fdbd5ae97b1c6856"
+    },
+    "DATA-NOTICE.md": {
+      "bytes": 571,
+      "sha256": "78453938ebdb48e3b19a3010a1e4aec7c01c17f658cabf3ac7f2e2fff64d82f4"
+    },
+    "LICENSE": {
+      "bytes": 1076,
+      "sha256": "3791bc2f0981024dd808e1be5a5708efd9017cb8a9d82c52da6d1a1aa7e7749f"
+    },
+    "LICENSE-SCOPE.md": {
+      "bytes": 303,
+      "sha256": "0ace87f3660f9dc6a2407cb0ed59ab3491579fbcfdabdeb265cc85aeab9c737e"
+    },
+    "README.md": {
+      "bytes": 1640,
+      "sha256": "e0b42be3b4289fef24c78b46d36707d431bad476b311f690b3d41a7aa4c3919a"
+    },
+    "THIRD-PARTY-NOTICES.md": {
+      "bytes": 307,
+      "sha256": "3e786758d0eecc1f258c9ddcfa56611a16437959a8ab41614c9018bcdd56d310"
+    },
+    "awf/components/artifacts/opv-fragment-library/component.yaml": {
+      "bytes": 1930,
+      "sha256": "31ced39e6f74eba718e37d32ee732e1f29b956f6545504a9b53f14e7ed7dda86"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/ARTIFACT.md": {
+      "bytes": 358,
+      "sha256": "cb2b0843c9cb074440a6fbd266539a227ef5fa2618e5eb0fbd4150ab63540632"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/DATA-NOTICE.md": {
+      "bytes": 610,
+      "sha256": "b24a891d98dccb416f22a14cb5c5922f7f3974dbecebfe257a6b83923eec6163"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/README.md": {
+      "bytes": 821,
+      "sha256": "5ca7c58c0b434e1aa251fea823d8aa5b1ff2f3a92e8dbbbf1592e39f099290f8"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/index/SHA256SUMS": {
+      "bytes": 21773,
+      "sha256": "e62c8aee20df5e26596ad1e79d48a2a3df2dcff30bfa921b1abdd9f7d0e8bafc"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/index/fragment_catalog.tsv": {
+      "bytes": 22151,
+      "sha256": "5a5ad10aa30c6e38edc98f06bc1bfea97a39a40852306b657a87a07aeada6c13"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/index/molecule_catalog.tsv": {
+      "bytes": 1108,
+      "sha256": "755e33568e49f8525c305e0de00125c1d01da6f66c74992108a825bd53fce237"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/index/name_collisions.tsv": {
+      "bytes": 2939,
+      "sha256": "f8dec10eace8d2c502eecffbf56cb77e70ff08d0e9e26a2ae620a00aefd41d68"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/index/source_sets.tsv": {
+      "bytes": 890,
+      "sha256": "2f5f7d88714f7360ed8fc4b7f1cea49c0c96c77a1467dda384df00bf2f99391d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/library_manifest.json": {
+      "bytes": 2350,
+      "sha256": "43c436987e7fbd39778c49ac954d7613c98bb4e71872168cea36e60e4d973f0f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/nfa/L8-Cb4/L8-Cb4.pdb": {
+      "bytes": 16308,
+      "sha256": "061bfdca7f8b51f72b7e3210f75337508e7340c7727355be4c8f7ff92943b183"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/nfa/L8-Cb4/L8-Cb4.top": {
+      "bytes": 112804,
+      "sha256": "036017476b743b7ffddd7727c0fe1a6ced8253868c13d710d137fd1dc83bcbd4"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/nfa/L8BO/L8BO.pdb": {
+      "bytes": 15741,
+      "sha256": "e84c803bcbbd5cb681a74724dbf78161657889ec4882798b13ec36f0c49fd0fe"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/nfa/L8BO/L8BO.top": {
+      "bytes": 107558,
+      "sha256": "e3d2f127b531eb70484f699a7613debd7c9e8cf4b5053b353aa16841290538ca"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/nfa/L8_4-Cb/L8_4-Cb.pdb": {
+      "bytes": 16308,
+      "sha256": "8a14d67c90285371dea0d94f6ef6e40146836675d8ccd577374c63b09673d53b"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/nfa/L8_4-Cb/L8_4-Cb.top": {
+      "bytes": 112807,
+      "sha256": "30efe69e3b39c80670dedaa73147229f374accc2382756affa522e51e9af1d11"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_10mer/10mer.pdb": {
+      "bytes": 146880,
+      "sha256": "4d95ca73df87bdb73e3bccc55523917fbd14b4a18a6fdc922026633097a4e450"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_10mer/10mer.top": {
+      "bytes": 926740,
+      "sha256": "9c10d940a39d2a3c1ddecb425b4c68526fb26b919d6962298adecc28c285c82c"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_1mer/1mer.pdb": {
+      "bytes": 17847,
+      "sha256": "56d3031acebe992d3b775d62f1f83912f45ad3dea2b41322773612ae1100a3da"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_1mer/1mer.top": {
+      "bytes": 112472,
+      "sha256": "8a82060b7b924d23563293685b2667f13d368857283bcd0625d46cf421c85525"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_3mer/3mer.pdb": {
+      "bytes": 44253,
+      "sha256": "5d6433dc70e3d001acdf11976aaefaa9402c7063f3db544166749ae4007bdaed"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_3mer/3mer.top": {
+      "bytes": 280968,
+      "sha256": "f28c36665a0b8ed2229bfe9363ce9860b3fe3f854b418b8b369f6a5a1c3477dc"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_6mer/6mer.pdb": {
+      "bytes": 88695,
+      "sha256": "9d130b311df5f3160d270ed21d3282bb00e0b26c103a680d034f40c049ad4700"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_6mer/6mer.top": {
+      "bytes": 549070,
+      "sha256": "308fe18f3eb2f16808e74182b574e7e29d8b51937a02dc8c198b0879426e91c8"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_6mer/D18.itp": {
+      "bytes": 547493,
+      "sha256": "9e8074418e748cfa03018587d01e23c9de50b1266ecc5f3d60f1f816725fa236"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_8mer/8mer.pdb": {
+      "bytes": 118179,
+      "sha256": "1addb6fb69484171049d186b6314f784b5992140e6abab00179222da69a7d7a3"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/D18_8mer/8mer.top": {
+      "bytes": 771105,
+      "sha256": "4d97a4256ec5ab11999df1ec9e8ef5174d836c19a301cea83878b051f59d5ffd"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/P3HT_PHT/PHT.gro": {
+      "bytes": 18138,
+      "sha256": "58a1a0b93b98f1882b0557a6d9f98bdebb6dac4cbeb6a01fed0f06f44ff22a6e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/P3HT_PHT/PHT.pdb": {
+      "bytes": 61803,
+      "sha256": "5469489c89ca5bbcdafdf027a8b8d5bf45256a22345088f50ab998e79c6b0423"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer/P3HT_PHT/PHT.top": {
+      "bytes": 392314,
+      "sha256": "4cb05acf0665878ee592367971f888138a828dd509edbe9e6af9e72aba8ec97e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer_or_mixed/PM6/PM6.itp": {
+      "bytes": 726669,
+      "sha256": "618a0805650d46c99e5747bb8023f7dda9a34998fa3367f00aeba920c4cb748f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer_or_mixed/PM6/PM6.pdb": {
+      "bytes": 101763,
+      "sha256": "a1deaff6214e97c2d409b67463b46b46313572095a339221561ce53a15096519"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/molecules/polymer_or_mixed/PM6/PM6.top": {
+      "bytes": 728088,
+      "sha256": "9cc51e778ddfbca12480ea70cf520adca5544c50226098667bc07a2e94fb5823"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/provenance/current_L8_derivatives/README.md": {
+      "bytes": 1418,
+      "sha256": "ee541f7e1db80b428fffb61c6a64fafa32da2d00b7bd14fc0ab0f21cfd2cf084"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/provenance/current_L8_derivatives/assembly_audit.json": {
+      "bytes": 9946,
+      "sha256": "a6690091df067a214e73afa394802348a67199c345a7366f72268b427b0d7b7e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/provenance/current_L8_derivatives/gaussian_fragments_README.md": {
+      "bytes": 1885,
+      "sha256": "448ff977aafdde2f171a8d59c475a14434fd59c6a1d2b5525eefc0694896e58b"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/provenance/current_L8_derivatives/input_report.json": {
+      "bytes": 8864,
+      "sha256": "9bcb2264117844ac39fe89bf28beae244c364610e8742df0f2cf99714fc8a523"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/provenance/current_L8_derivatives/ztop_fragment_audit.json": {
+      "bytes": 3955,
+      "sha256": "a6e2a8c9728a2818d5634d34bfcf2668e577a3d31df9ece4143820d0fe608e0a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/AAC_A.frg": {
+      "bytes": 73,
+      "sha256": "3e6a0d9ed5e69ba6a2ca4898a9089e3f0ec7f2bf0446f969545aeab753535256"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ADN_D.frg": {
+      "bytes": 135,
+      "sha256": "62f67ad1ac505d93197ae5ee99ba86aee753d33bc7c73302ac3c73aefbf340eb"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ALL.frg": {
+      "bytes": 91,
+      "sha256": "2adc8f97a5760ee7832b7b2aa8ae7f05549375133e810a87b69e12266c70da62"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/AQxcore.pdb": {
+      "bytes": 14013,
+      "sha256": "0d195f164ca55d75da2486947369228fd5f64a5e4f4f3206a995973e29561561"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/AQxcore.top": {
+      "bytes": 85454,
+      "sha256": "0104e150ae82c2e9ea14638bdc375468db236432e4d5370041289fa28344ce46"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARC_R.frg": {
+      "bytes": 74,
+      "sha256": "f804ccc9585feb05be741edd257d4b3b3cda8d787ad14cbfb0f6cf339ccfae84"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARC_S.frg": {
+      "bytes": 74,
+      "sha256": "1bf9b44198412751ace46089e61992cb844e665b2572ccb670230ce698b387ad"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARC_T.frg": {
+      "bytes": 74,
+      "sha256": "5dc79c7fca911e158a386ab77818e955b65b91aa25c34ef11143978eb05c1cb4"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARC_U.frg": {
+      "bytes": 69,
+      "sha256": "0e6b8677fe5c47ef990d470d99d7bfd26e69d42c232ec093e83ac4c7d1055559"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARC_V.frg": {
+      "bytes": 66,
+      "sha256": "9e050aef824641cb041559e4cc01f85b55546397e3085025a99ba171663e4a93"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARC_W.frg": {
+      "bytes": 66,
+      "sha256": "d2a4a1ce86ca47f4865a7e855d72af68b8e76be58c1806ab7bda6680cd87ef3b"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARC_X.frg": {
+      "bytes": 68,
+      "sha256": "689b967e620533b41afe813192eccc0cfd52ca5868d7e4efb56f47d9692dfcac"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/ARS_B.frg": {
+      "bytes": 91,
+      "sha256": "2adc8f97a5760ee7832b7b2aa8ae7f05549375133e810a87b69e12266c70da62"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/C24.pdb": {
+      "bytes": 2835,
+      "sha256": "7d8c998b10ba1b396659c3aa02b974da70a1ddec2265ffce7bc20530adc1950a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/C24.top": {
+      "bytes": 16834,
+      "sha256": "9d3341dd0907e8cd17eb15c7e8fa395b7a55f4641fea42014c4801e59473d8c7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/C46.pdb": {
+      "bytes": 4693,
+      "sha256": "b61d07e5531eaa1a4f5ee0db695baf54520b2eefdf46ac6ec3c5a738b8d4acc9"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/C46.top": {
+      "bytes": 22522,
+      "sha256": "a7d7366a511514627c7e522bbdc7f5b7dcfbdbd912c5777cc5d1f28eac68d7e2"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/C68.pdb": {
+      "bytes": 5905,
+      "sha256": "532532205ae3c9a5cf85b9ce2cfc878ffa2972c619e93fc20d63df6e02b99a2d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/C68.top": {
+      "bytes": 28218,
+      "sha256": "d98feedd9b8b1313dbe8c69932bdb50068240c821df8ca4603ed8cfd5d5633f5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/CH3.pdb": {
+      "bytes": 6127,
+      "sha256": "197661fab0329c9a02e0b6656825a6f4a3368d1fbc4a733809ca6a8899c2db74"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/CH3.top": {
+      "bytes": 29392,
+      "sha256": "eda5253283c1b008927a71f472c7281b3b5924fe75721f08fa1daf3b5c1282a6"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/F.pdb": {
+      "bytes": 5521,
+      "sha256": "1df6ae5bd074099364821b58b30a832b3a98e14d194412e8bd9d9c8d369249a0"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/F.top": {
+      "bytes": 27076,
+      "sha256": "8d9412b4361743856ff6d156ef93bb7223bc48bc7d5b9ff576dc7ece304de4f5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/H.pdb": {
+      "bytes": 5521,
+      "sha256": "65219f6140ff7a4fd9ca4b4de5d15187076e14e489ad912cf25a90b2abe04bbc"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/H.top": {
+      "bytes": 27007,
+      "sha256": "0e0f38203783bad371e08e3824bc3d315192db27f4cd57de4abdae7d7a4bb082"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/OCH3.pdb": {
+      "bytes": 6329,
+      "sha256": "ea5d4f1150c4ce2fcaae9d4b02cbdb8dc4b926bced2417a5753bedf1c16b4661"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-01-aqx/OCH3.top": {
+      "bytes": 29684,
+      "sha256": "46c827bdc6b52714a07e9c3b6946f10eb1b85166ca92c7d8eb261e67d906fb48"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/AAC_A.frg": {
+      "bytes": 78,
+      "sha256": "a0efaf6f560c566c89f6502c2f51076cdc0bbb8d146e0201337a1ed0e43cac35"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/ADN_D.frg": {
+      "bytes": 139,
+      "sha256": "795610c8e9e28d662a0f06755c81617be65bbda41a7dd1b3034b4708b82bfd3c"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/ALL.frg": {
+      "bytes": 139,
+      "sha256": "795610c8e9e28d662a0f06755c81617be65bbda41a7dd1b3034b4708b82bfd3c"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/ARC_Y.frg": {
+      "bytes": 81,
+      "sha256": "f7e0c8a79b7edddcab72bab1a5f7ed95cac477e926ed7eff94c33e0811642c0d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/ARS_X.frg": {
+      "bytes": 81,
+      "sha256": "b0d026a080fcff9375173fcf405fba2c44868a9c581c6a5cb4318c2beb8cdbb8"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/C24.pdb": {
+      "bytes": 2835,
+      "sha256": "7d8c998b10ba1b396659c3aa02b974da70a1ddec2265ffce7bc20530adc1950a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/C24.top": {
+      "bytes": 16834,
+      "sha256": "9d3341dd0907e8cd17eb15c7e8fa395b7a55f4641fea42014c4801e59473d8c7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/C46T.pdb": {
+      "bytes": 3726,
+      "sha256": "44d704f68e049e550a52aaaa684140fe0505433d3968ca961eb5604911691b62"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/C46T.top": {
+      "bytes": 21855,
+      "sha256": "209aeeb77d27363911eb077ec9a38e45a1533823c16300afafe03deb3f119741"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/Y6core.pdb": {
+      "bytes": 7938,
+      "sha256": "06c1f27db5ebc8022e5e94415966630acb069f92d030bb6ba532c003f47bfff5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-02-l8bo/Y6core.top": {
+      "bytes": 49606,
+      "sha256": "02ac5f4d38431598db4992000c71f7cce10083595a9dd5e41b4d0f6908c6b34f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/ALL.frg": {
+      "bytes": 81,
+      "sha256": "c5b7f8b3a58679c846e45c90a2ab22f66ffbe9aaea2a5dc14a7ef189585a6c8f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/BPI_A.frg": {
+      "bytes": 161,
+      "sha256": "04c139e51d4692444b9db7ef24442c692fe4d5a92387efdcf39a392b1fe1c54c"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/BR8_Y.frg": {
+      "bytes": 73,
+      "sha256": "3a9d38286006f9cf2ea4305adde8eaab7a392877b5f45af7233c3eb69bdf5275"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/BRC_X.frg": {
+      "bytes": 81,
+      "sha256": "c5b7f8b3a58679c846e45c90a2ab22f66ffbe9aaea2a5dc14a7ef189585a6c8f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/BRS_Z.frg": {
+      "bytes": 78,
+      "sha256": "8405df70a9b00229915607edaef1a6927ec92da746c43e14c343555dec11f40d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/C24O.pdb": {
+      "bytes": 3402,
+      "sha256": "80243eebd947fdaeec1a95f44a37c0213a5fd2e35509231893d5d4898593ae8c"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/C24O.top": {
+      "bytes": 19570,
+      "sha256": "916b18c3da7493184c0037bfc65232628816eff275b00273cd3dc2ccba3b8d1b"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/C46T.pdb": {
+      "bytes": 3726,
+      "sha256": "44d704f68e049e550a52aaaa684140fe0505433d3968ca961eb5604911691b62"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/C46T.top": {
+      "bytes": 21855,
+      "sha256": "209aeeb77d27363911eb077ec9a38e45a1533823c16300afafe03deb3f119741"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/C8T.pdb": {
+      "bytes": 2754,
+      "sha256": "5f1ba90387ac6aa173763cc9f24ecdb8808bcb5943c18b7359808ea6ec76e61f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/C8T.top": {
+      "bytes": 16157,
+      "sha256": "3465fdc8686c0a99a808aa8795f87665e83721bfce72f79ff7d494e4bfba01b5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/DEDcore.pdb": {
+      "bytes": 11907,
+      "sha256": "ebb6aa23748e6d21047c1bf1bcb68e279d1db5db29fb662fcb4dc0cca73ecc64"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-03-qde/DEDcore.top": {
+      "bytes": 68171,
+      "sha256": "3e38b33479a7e1a2f6e4cfc2a9bc76a804ac8aa1cf4c61674213c4138e32dd53"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/AAC_A.frg": {
+      "bytes": 78,
+      "sha256": "a0efaf6f560c566c89f6502c2f51076cdc0bbb8d146e0201337a1ed0e43cac35"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/ADN_D.frg": {
+      "bytes": 139,
+      "sha256": "795610c8e9e28d662a0f06755c81617be65bbda41a7dd1b3034b4708b82bfd3c"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/ALL.frg": {
+      "bytes": 78,
+      "sha256": "c064bc1d9313449f8d79553d77715b1c6be05ca39694eab48624d899ba1ef72e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/ARC_Y.frg": {
+      "bytes": 81,
+      "sha256": "f7e0c8a79b7edddcab72bab1a5f7ed95cac477e926ed7eff94c33e0811642c0d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/ARS_X.frg": {
+      "bytes": 81,
+      "sha256": "b0d026a080fcff9375173fcf405fba2c44868a9c581c6a5cb4318c2beb8cdbb8"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/ARS_Z.frg": {
+      "bytes": 78,
+      "sha256": "c064bc1d9313449f8d79553d77715b1c6be05ca39694eab48624d899ba1ef72e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/C24.pdb": {
+      "bytes": 2835,
+      "sha256": "7d8c998b10ba1b396659c3aa02b974da70a1ddec2265ffce7bc20530adc1950a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/C24.top": {
+      "bytes": 16834,
+      "sha256": "9d3341dd0907e8cd17eb15c7e8fa395b7a55f4641fea42014c4801e59473d8c7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/C46T.pdb": {
+      "bytes": 3726,
+      "sha256": "44d704f68e049e550a52aaaa684140fe0505433d3968ca961eb5604911691b62"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/C46T.top": {
+      "bytes": 21855,
+      "sha256": "209aeeb77d27363911eb077ec9a38e45a1533823c16300afafe03deb3f119741"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/Y6core.pdb": {
+      "bytes": 7938,
+      "sha256": "06c1f27db5ebc8022e5e94415966630acb069f92d030bb6ba532c003f47bfff5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/Y6core.top": {
+      "bytes": 49606,
+      "sha256": "02ac5f4d38431598db4992000c71f7cce10083595a9dd5e41b4d0f6908c6b34f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/tbu.pdb": {
+      "bytes": 2025,
+      "sha256": "9b27adc9d9e7c4c92a5852fb33d3bb84a84c0edef77c22f9d38e7ae37fcf2e61"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-04-stbu/tbu.top": {
+      "bytes": 11875,
+      "sha256": "437a915fb03305e4f6528b65bb81bdd8e3774aac2140cf4d83b55014851ef2c9"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/AAC_A.frg": {
+      "bytes": 77,
+      "sha256": "e9bfb4f42ca94ac22fe8359d289b8d5d740589be56dfb65f9de28343591b92cd"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/AC1_y.frg": {
+      "bytes": 80,
+      "sha256": "321a39ee4278da017656c270475a0f395c70c1cb5930e48922f14b68f4faead5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/AC2_x.frg": {
+      "bytes": 80,
+      "sha256": "ecdbf1be8722e3162ee0956cc58cfa7ba1ed295e459f39787fa4bd19e3a57dd4"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/ADN_d.frg": {
+      "bytes": 124,
+      "sha256": "7c24c6edd7fa3324c2d21771ee540bbc17fd9c473a7eab693bd78729fe4c3f0f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/ADN_e.frg": {
+      "bytes": 120,
+      "sha256": "e37b9dde17aca1d7c4154a656eedcef755e79d2df5eaad2705bc2cedb94b4d8d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/ADN_f.frg": {
+      "bytes": 117,
+      "sha256": "b82b8f2fa020d8776cfdf9054d6b85b61d8e5b46f93d6ccf0c34ed696019ddc2"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/ADN_i.frg": {
+      "bytes": 121,
+      "sha256": "07340c629451a1516fbd7a15ca1eca4e0ebd1fb60eccd7eb442122e2080c962d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/ALL.frg": {
+      "bytes": 117,
+      "sha256": "b82b8f2fa020d8776cfdf9054d6b85b61d8e5b46f93d6ccf0c34ed696019ddc2"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/BBQ.gro": {
+      "bytes": 4908,
+      "sha256": "b9c83d124af1e29da9c17c38daa8832b349535362725df57ab3a12219f278a9a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/BBQ.top": {
+      "bytes": 56654,
+      "sha256": "8598bc2d0e4f297c88256ec9d1c5ddfd5d7a1b33094d91756ee04b026d270efc"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/BQF.pdb": {
+      "bytes": 8748,
+      "sha256": "2984aedbc7e339075a967785dac22e693f7bc0987948bcea7dffd7ee74fdf80d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/BQF.top": {
+      "bytes": 55829,
+      "sha256": "e9eb9576c6c3aacbee6c058f49b49a455c8b535420068fe867420075d83469eb"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/C11S.gro": {
+      "bytes": 1938,
+      "sha256": "27b0d940e4b41656352505aab19207cfa4487039efc8149bfebd7ddf86041309"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/C11S.top": {
+      "bytes": 21855,
+      "sha256": "38be68a779843bcb2ee4db6484ad842fd0d2e3e6719be6961db73fea091aa20f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/C16S.gro": {
+      "bytes": 2658,
+      "sha256": "c58f553df39a01691a51a5ef3c9052e6503764171b465b5588a8579c3a060367"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/C16S.top": {
+      "bytes": 29919,
+      "sha256": "bdaa02536ee1e282fe2b0796d67fbdde6b154b86e07e54395e6ae0259b17af1f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/IBQ.pdb": {
+      "bytes": 8748,
+      "sha256": "d950ef7f4b5beb2c3256f3ee474709d3f9d6ad54dc2fb50e671966fc47e4af0e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/IBQ.top": {
+      "bytes": 55827,
+      "sha256": "d66243236128a3a08bfeb17e53dad3e16635048ca5d3fd4466adab04d4bb225e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/Y6.pdb": {
+      "bytes": 7938,
+      "sha256": "a5f2373ef95470d51a42730ce19680a5cd6b982f6a82eb7f53dbc048fafcfc11"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-05-nfa-forcefield/Y6.top": {
+      "bytes": 50510,
+      "sha256": "a66757b8144af25556d94ed5770b8fc23c893fd1686a1ae1a723462adbd2ab02"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/ALL.frg": {
+      "bytes": 99,
+      "sha256": "4af65e7b511a2c2d3d7a728eec1a46430b863bfd7d9e4724cc0b74b444e47e5a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DAC_A.frg": {
+      "bytes": 108,
+      "sha256": "35a28b6350847a1b835b7116c50259a067b2697f6ea8685e94b42ed95db6f7c6"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DAC_T.frg": {
+      "bytes": 98,
+      "sha256": "52540c24d35ef7c349ff2ec3151829bc70c50938d0c71498fca92c1de9522fb9"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DC1_m.frg": {
+      "bytes": 85,
+      "sha256": "5b8ded5ed69f1251a50112614f28de85699535463262f95474e721740e2c4b8b"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DC1_n.frg": {
+      "bytes": 85,
+      "sha256": "d04a2832d467cb759cf0da2c71cc1a7f7f3518f8c583f257333590231aa0a8a7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DC2_x.frg": {
+      "bytes": 86,
+      "sha256": "57b0d36b820f2d8b7ee6d57ef7abe6d1c90d9ca40f8abc97c2f2eb8d06d9c2d4"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DC2_y.frg": {
+      "bytes": 85,
+      "sha256": "6c2e0d9b9c2d4c955c601e2a0f8225f848c00b42dd55d333eeb7d854e40d74f0"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DDN_D.frg": {
+      "bytes": 99,
+      "sha256": "4af65e7b511a2c2d3d7a728eec1a46430b863bfd7d9e4724cc0b74b444e47e5a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/DDN_H.frg": {
+      "bytes": 95,
+      "sha256": "4dd658dd7a2a80c4bde3ba1a17caaf9b67aa682f0fb76666ccf94adfdc287dff"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/PM6-A.gro": {
+      "bytes": 8508,
+      "sha256": "ecc8a5541285aea21c06980bd99453ae03046936bc3bb0b679cf325a5ce3a481"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/PM6-A.top": {
+      "bytes": 95048,
+      "sha256": "12e52d94bd87267b1162e725c0ce3a314ce1155d61e9aa022ba56a089ee61faf"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/PM6-D.gro": {
+      "bytes": 6258,
+      "sha256": "bd39f5ac65920d747cfde9f8f83dcf060f5eb3c00b8e3ca2f846633a9a9ff8f1"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/PM6-D.top": {
+      "bytes": 69916,
+      "sha256": "f3ff1a7eb8191063df267a89283cec28e8b2470aaa938a80462c5d5163b078ef"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/PM6-HL.gro": {
+      "bytes": 3378,
+      "sha256": "2ac04725ac69d4c99e4875a2377523636450889cbcb24d5df2cf41061da8ced8"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-06-pm6/PM6-HL.top": {
+      "bytes": 37951,
+      "sha256": "c83f80f7ebc75983613ce8bab71aca9d3376dcfc01a4e878a38c44f5eecf1904"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/AAC_A.frg": {
+      "bytes": 60,
+      "sha256": "42e2240210c369fbb56b27a6a5a2aea08682f2c91bfcb579260b72f1d0b41fe3"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/ALL.frg": {
+      "bytes": 61,
+      "sha256": "b047e41b09cdb55b22e23308034cfc7df8228b0d7c0050d28af92d3e8ec9d8a7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/AR1_X.frg": {
+      "bytes": 61,
+      "sha256": "49bbaa24755aa48003533b95d01735d02bff72b0aa30dff7cb03662bb4298084"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/AR1_Z.frg": {
+      "bytes": 61,
+      "sha256": "b047e41b09cdb55b22e23308034cfc7df8228b0d7c0050d28af92d3e8ec9d8a7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/AR2_Y.frg": {
+      "bytes": 60,
+      "sha256": "1ba17acff78dd3d9907acd44172e3a2bf7fc5ef987959d19ff1eda13efd4cf88"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/CBO.pdb": {
+      "bytes": 20493,
+      "sha256": "36bf52cb6ddbc8e4a677ec5035dbe07fbb90179949ee4ab2a35f57abf1a4d9fa"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/CBO.top": {
+      "bytes": 130165,
+      "sha256": "ec8aff35cb7f0ebcdfc2acc57ee5b96f02651957eb1b1be93bb30b967041f22b"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/CHP.pdb": {
+      "bytes": 18063,
+      "sha256": "35fd68634cadbcb676996040d9b65b392242033da6a503313fb2dea8200046bd"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/CHP.top": {
+      "bytes": 114523,
+      "sha256": "4adc02ed5fdcf9a6142201cca9cbb5c628873df34caf38f57a8c58be90f375d5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-07-nfa/DDN_D.frg": {
+      "bytes": 113,
+      "sha256": "23b86923f01fdd992c64a9249bd640a5bfabae4294cb697c6168cc13aa37cdca"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AAC_A.frg": {
+      "bytes": 60,
+      "sha256": "0079d199acda7d392072b181b1688cb81f1b7405ee5e30147d7a521edbeec740"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/ADN_D.frg": {
+      "bytes": 112,
+      "sha256": "289a68dc7b943748e32d0e0601880802a3cee33ec74d8fab5e0b18cfc32dca8d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AG1.pdb": {
+      "bytes": 15714,
+      "sha256": "f0169968fe03774b21a503d13ec7f4bcc753f6f73e25872ad3e1c3e393e3f42d"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AG1.top": {
+      "bytes": 99481,
+      "sha256": "c22d9be74943795db81a5f0ec4ff47ba3a90667674373738796cb10f833a8d51"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AG2.pdb": {
+      "bytes": 16200,
+      "sha256": "c03f87fd5fa78459693eb543f75ee376a44c76734d89925b729f624c6e74c6c8"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AG2.top": {
+      "bytes": 102791,
+      "sha256": "e307865ed16d3d3b9311c40a67afdc401bff85c20d3a2527c9b3a9aa0009c2ea"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AG3.pdb": {
+      "bytes": 17172,
+      "sha256": "cfba86f3c815a4b9040ccca511a23d88bf520b68a2357692bb6f6d027c0b4301"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AG3.top": {
+      "bytes": 108524,
+      "sha256": "e51ba12daa74f5a707e8afaad31c8a346578c113aabf1a811732a2dabe57d408"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/ALL.frg": {
+      "bytes": 61,
+      "sha256": "9ff4707f41399cceee87602eb4f80dc90120fbe5cb33d5b35610a6b95e54f954"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AR1_R.frg": {
+      "bytes": 59,
+      "sha256": "00717665008ab21c7921233c0bac12038c059ba699258011709f573dc7987388"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AR2_D.frg": {
+      "bytes": 112,
+      "sha256": "1c94648efb5f01ce61522549c7787c820dfd951f69df3bb4a76034313673ea93"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AR2_X.frg": {
+      "bytes": 61,
+      "sha256": "2a80b0ef1f52686dec0cf0747b412a01095690b6a24fbf9537bf425fa0f34366"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AR2_Y.frg": {
+      "bytes": 61,
+      "sha256": "c2149204b2f3fcae763be25314d6eca88fe11e33f98da08c5fb3fe1d2ed5a162"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-08-nfa/AR2_Z.frg": {
+      "bytes": 61,
+      "sha256": "9ff4707f41399cceee87602eb4f80dc90120fbe5cb33d5b35610a6b95e54f954"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/AAC_A.frg": {
+      "bytes": 72,
+      "sha256": "4398770e26b5e9ee4d16dd31d35b73ec2e695fa8f18772bb5c9689ff62fd11d3"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/ADN_D.frg": {
+      "bytes": 129,
+      "sha256": "7b201c6809d4f002b4d26cd1b9cf25b6881377520435ed7876de6bf0fa8c6424"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/ALL.frg": {
+      "bytes": 75,
+      "sha256": "f09e183c7a6f12c8585fe57224ce203a2dd4d34dc0555466831f40750cc9315f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/ARC_M.frg": {
+      "bytes": 75,
+      "sha256": "f09e183c7a6f12c8585fe57224ce203a2dd4d34dc0555466831f40750cc9315f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/ARC_N.frg": {
+      "bytes": 73,
+      "sha256": "03c3290c13cd87620e0caf26187d051012f7bf54070dc28aa91dc8ee6d38965f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/ARS_D.frg": {
+      "bytes": 136,
+      "sha256": "9ec21a0da2fc6e85942d2b30fc47651ac906e63ad1b940d4ed866e43ab239cbc"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/ARS_X.frg": {
+      "bytes": 73,
+      "sha256": "e699fe55174bcbe24e107ec97ec0dfb801c2d9f59329847e769afe8e172d3a4e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/ARS_Y.frg": {
+      "bytes": 72,
+      "sha256": "3fc4471fee234ba529dbbbd9a999af00baeb181a9304dd6e459fd6c333991246"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/MEME.pdb": {
+      "bytes": 14256,
+      "sha256": "21ce9abb4b3e41b2067a3e52d3fff0425dc7f054d3d530bd88e38916c7989efa"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/MEME.top": {
+      "bytes": 86595,
+      "sha256": "99f33d94d7d5b5e328a960d97593c42af983bbb8f2e65241a699f7be7fb87dad"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/STBU.pdb": {
+      "bytes": 14256,
+      "sha256": "016edeb25ee49fc2b45d2e230aaad8ca5db1d8fefb6ea9adb04ffdecbc50f969"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-09-nfa/STBU.top": {
+      "bytes": 86588,
+      "sha256": "f5e5f1fbfabf2f7abb6623cbef5a2bf0f2663a95694f3a067f94a52c7a8b51e7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/ALL.frg": {
+      "bytes": 784,
+      "sha256": "c7a83d5f9d617a264be2dbfb717b5c2a71aa71168cacf916777371110a5cf9e3"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C24.pdb": {
+      "bytes": 2835,
+      "sha256": "7d8c998b10ba1b396659c3aa02b974da70a1ddec2265ffce7bc20530adc1950a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C24.top": {
+      "bytes": 16834,
+      "sha256": "9d3341dd0907e8cd17eb15c7e8fa395b7a55f4641fea42014c4801e59473d8c7"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C46.pdb": {
+      "bytes": 3807,
+      "sha256": "8f29dd5b4e517ad537b15bac054c8d270cea3c556dedac5e1c063da1911ee3de"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C46.top": {
+      "bytes": 22522,
+      "sha256": "a7d7366a511514627c7e522bbdc7f5b7dcfbdbd912c5777cc5d1f28eac68d7e2"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C46T.pdb": {
+      "bytes": 3726,
+      "sha256": "44d704f68e049e550a52aaaa684140fe0505433d3968ca961eb5604911691b62"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C46T.top": {
+      "bytes": 21855,
+      "sha256": "209aeeb77d27363911eb077ec9a38e45a1533823c16300afafe03deb3f119741"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C46T_sp3.pdb": {
+      "bytes": 4212,
+      "sha256": "52982426ffab5f13c48c4b2652d878ab5c901b236c78bace8affd814ca6304d0"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/C46T_sp3.top": {
+      "bytes": 24709,
+      "sha256": "dc01a4d4f85a1c93edffb33a32c4564209e945c7e98a781b5429e6bbbb6707b2"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/Cb1T.pdb": {
+      "bytes": 1863,
+      "sha256": "973d5862a995310e02e384fb90d4f24e33a4a5436245e05325b4156c1f4b4025"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/Cb1T.top": {
+      "bytes": 12192,
+      "sha256": "67df67d06f811a166783c7ca4102790e136ace960b90d27fad9b5d4041b950af"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/Cb3T.pdb": {
+      "bytes": 2349,
+      "sha256": "063c4d7a01790af132d331f0c9ce7d59b7dc8491a5727cc7df14d714188dd3ea"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/Cb3T.top": {
+      "bytes": 15040,
+      "sha256": "62a0bf44bd8f2b05eb36559d0842c68780432ea94a4763ce9f4cd9b88c643c48"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/Y6core.pdb": {
+      "bytes": 7938,
+      "sha256": "06c1f27db5ebc8022e5e94415966630acb069f92d030bb6ba532c003f47bfff5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-10-l8-derivatives/Y6core.top": {
+      "bytes": 49606,
+      "sha256": "02ac5f4d38431598db4992000c71f7cce10083595a9dd5e41b4d0f6908c6b34f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/ALL.frg": {
+      "bytes": 66,
+      "sha256": "9cde008ee9975d1aee2599044dade5d8223783aec004b43371110d107a775b50"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/HEX_M.frg": {
+      "bytes": 66,
+      "sha256": "9cde008ee9975d1aee2599044dade5d8223783aec004b43371110d107a775b50"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/HEX_N.frg": {
+      "bytes": 66,
+      "sha256": "54610d5e32cddde1e5616b683c4b64958be0ba7af433afd448c7988fe2787883"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/HEX_X.frg": {
+      "bytes": 65,
+      "sha256": "3769527671d449747a7f535fe0500c327dc01ba779d65bdcc07518067aae2fc5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/HEX_Y.frg": {
+      "bytes": 66,
+      "sha256": "6842973860ffec476f44aae960b5c5da983ea5f974c6f8d451478bdd99d321a0"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/PHT.gro": {
+      "bytes": 4638,
+      "sha256": "7d2d6cab39d72903ea12467fea16e935180d1a719e7610eb11b0bcbed0b7b86f"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/PHT.top": {
+      "bytes": 51793,
+      "sha256": "12172e5b2d353136e07c8f7dcf124dda01e6e97aedc410e947acfdb6d0a74f96"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/THI_A.frg": {
+      "bytes": 75,
+      "sha256": "c6d9a590116e7f4bb209a3005c82e81d7f7962ba80261d01b26200c993c542dd"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/THI_B.frg": {
+      "bytes": 77,
+      "sha256": "e627aab6f1b1d19ea0db2eb5ca50dd90230f7ea4191275b2fadfb6b89ab54b36"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/THI_H.frg": {
+      "bytes": 69,
+      "sha256": "66c2c318fb6239c3efee653e829cb5b06d0cddf2aa177dd9289ba86a61b03fde"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-11-p3ht/THI_T.frg": {
+      "bytes": 70,
+      "sha256": "67e554ed6045a1bd7e52d73c2a633d9214a38b252eb0ab6f03dc0389b1b3ea1a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-12-legacy/ALL.frg": {
+      "bytes": 73,
+      "sha256": "2d0e59aa8ef03dc93e51314f2daa8e4aee51564088e7e3f66f5caa3e98fbdb7a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-12-legacy/gel.gro": {
+      "bytes": 5457,
+      "sha256": "b907150d3962a5b59a01f17e971beb87022af2bec4b90161f0630e84e8d436cd"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-12-legacy/gel.top": {
+      "bytes": 102085,
+      "sha256": "974697a0e868ee8de13f6f43059ac62e3ede19d9d3a329cac33de8dbb0ade775"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-12-legacy/gel_A.frg": {
+      "bytes": 73,
+      "sha256": "2d0e59aa8ef03dc93e51314f2daa8e4aee51564088e7e3f66f5caa3e98fbdb7a"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/ALL.frg": {
+      "bytes": 97,
+      "sha256": "a51bd1d7f65c5bdbe529e3b6c9971c8c40c6bb7e40683e381a3c77a8ea5d9440"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/C1014.pdb": {
+      "bytes": 7533,
+      "sha256": "0e7ab593790cbb76a61f6925f6b18f32f08130301fd6d0b19f17910d7be44e45"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/C1014.top": {
+      "bytes": 44662,
+      "sha256": "0c2e8d8261e312b9f3476c84c3b8cb7a91c1900574f7c0725bcb2cf0b6994dbc"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/C10_R.frg": {
+      "bytes": 68,
+      "sha256": "08bf37264e483d8d26cd90b1cebd2bc85ff1f92bd3fe732ceb45b2cadc56ede2"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/DTD.pdb": {
+      "bytes": 7857,
+      "sha256": "7a29a80b871ac58a9f27739c225512876f6b450dcfcb7163267b27e9aa287050"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/DTD.top": {
+      "bytes": 47303,
+      "sha256": "e6905365a96cf096c43d60ebab87406e83aa04692c0d035ff4b04ae9b5724976"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/DTD_D.frg": {
+      "bytes": 77,
+      "sha256": "66299c293afd6ec83cbe32cfc05df186bc6631f7449d312765f567ef69eaf35b"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/DTD_H.frg": {
+      "bytes": 86,
+      "sha256": "4723f50520be4a76a31b9dee84fff1da60aed727e3b38d3f880d1e2bb2b1962e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/END_N.frg": {
+      "bytes": 97,
+      "sha256": "a51bd1d7f65c5bdbe529e3b6c9971c8c40c6bb7e40683e381a3c77a8ea5d9440"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/TDT.pdb": {
+      "bytes": 6237,
+      "sha256": "3839f08a4467088e1350b23fed0fafc53ab1803c7c5b39e6bda71fb5bb038fba"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/TDT.top": {
+      "bytes": 37253,
+      "sha256": "17e3f9e2ad1b09c7414d368d07d4f25fda88aa85d971bb36ebeb19fffe6ddce4"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/TDT_A.frg": {
+      "bytes": 101,
+      "sha256": "4a3e813686c08aad401a2a1995500ccfbda42171c5aa249e686d1dc3831992ee"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/capDTD.pdb": {
+      "bytes": 11340,
+      "sha256": "9807feb010c06d38084fa172c20870746a8a8da8e801c4c626f5c33303bc1ec5"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/capDTD.top": {
+      "bytes": 67348,
+      "sha256": "0808cacc4724324fcad9f1405322d14780207edb3ce18a85f4a7b9e838cce68e"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/cap_T.frg": {
+      "bytes": 98,
+      "sha256": "e25a2a784d279f08fd94538f5be5b69998cac55ef2883b482ef1114615483c00"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/hexDTD.pdb": {
+      "bytes": 9882,
+      "sha256": "7931388c81a5ad23c5f41811b5ec36943a65708f5ff704784d4579dd91d9a985"
+    },
+    "awf/components/artifacts/opv-fragment-library/releases/1.0.0-rc.2/source/opv_fragment_library/sources/source-13-nfa/hexDTD.top": {
+      "bytes": 59029,
+      "sha256": "ddad785dcdd0ff5b2f8f4d8bd823593bd4435bdfa42ee39ac4c36c09a8cbb793"
+    },
+    "awf/components/recipes/gromacs-organic-blend-production/component.yaml": {
+      "bytes": 1225,
+      "sha256": "34d663bc3b3b54d58029600ca2efe8e361ccfc6fe51f9b423d8d69f0ffc45362"
+    },
+    "awf/components/recipes/gromacs-organic-blend-production/releases/1.0.0-rc.2/source/PROVENANCE.md": {
+      "bytes": 600,
+      "sha256": "a98fb3fc08be0b224509dcefec46a91226253961bbdd3402b49fcdb8d6bc8a0a"
+    },
+    "awf/components/recipes/gromacs-organic-blend-production/releases/1.0.0-rc.2/source/RECIPE.md": {
+      "bytes": 2382,
+      "sha256": "f606a205fb19d5728b657e9e53c7de8aa823848525d5f9508196d0424e8fc296"
+    },
+    "awf/components/recipes/gromacs-organic-blend-production/releases/1.0.0-rc.2/source/protocol.json": {
+      "bytes": 1101,
+      "sha256": "f42b27a6683bd273f95ca4ab169dafedffb25115b0862d06ad20f8c353a89064"
+    },
+    "awf/components/recipes/opv-morphology-analysis/component.yaml": {
+      "bytes": 1236,
+      "sha256": "eba347f93a95d2e312a7a8855cf0f5d7b492c854000c9e0db7bcc6caa6e8c28b"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source/PROVENANCE.md": {
+      "bytes": 1262,
+      "sha256": "aae687894c7e501bc8264aac5dd47c56897385b1d5a01a52f662615c2b28137e"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source/RECIPE.md": {
+      "bytes": 3785,
+      "sha256": "5b4b8000bcca7f003e00905a0250be61751a6ded93706c8e9b0b527a5a5cc482"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source/protocol.json": {
+      "bytes": 2182,
+      "sha256": "d27258d44945448913bced964c4a1762b127f428da8fbb82773a0b5265fd2418"
+    },
+    "awf/components/skills/analyze-opv-morphology/component.yaml": {
+      "bytes": 1105,
+      "sha256": "5d2a2ff24997a6480f2dbc0a0acf0823ed9f14fce704fcd0a8939b384f01b020"
+    },
+    "awf/components/skills/analyze-opv-morphology/releases/1.0.0-rc.1/source/SKILL.md": {
+      "bytes": 4018,
+      "sha256": "67e049b952621581adf0350284d54dcc63c2f0855b48b126a2f2089c4f86d045"
+    },
+    "awf/components/skills/run-gromacs-organic-blend/component.yaml": {
+      "bytes": 1083,
+      "sha256": "6ad2cadd481d8d2c616dbf2788fbcb00605730d293e5cede59c664209252d494"
+    },
+    "awf/components/skills/run-gromacs-organic-blend/releases/1.0.0-rc.1/source/SKILL.md": {
+      "bytes": 2772,
+      "sha256": "c71eab6cbc1ff940c29400167ac851fe55165691043692b4772e12f5e5127304"
+    },
+    "awf/components/tools/opv-library/component.yaml": {
+      "bytes": 1198,
+      "sha256": "e3827f711d2cc1091bbae5e627fc80803e54b90ce831687c6b9146a1bd2685f0"
+    },
+    "awf/components/tools/opv-library/releases/1.0.0-rc.2/source/PROVENANCE.md": {
+      "bytes": 368,
+      "sha256": "fa1a581312cf5fb63363bc548af722fc6f5f3c3cfe66a3ffb8a57e077169f6e9"
+    },
+    "awf/components/tools/opv-library/releases/1.0.0-rc.2/source/README.md": {
+      "bytes": 818,
+      "sha256": "6d4c47a18f61eb7fdd3e5d1d014195b59adf187650a5320d869d45d5e63b0387"
+    },
+    "awf/components/tools/opv-library/releases/1.0.0-rc.2/source/opv_library.py": {
+      "bytes": 13805,
+      "sha256": "121056d9b33c0cfe9eef26d0374f87181a671726e8e9b5689a754e12939455be"
+    },
+    "awf/components/tools/opv-library/releases/1.0.0-rc.2/source/tests/test_opv_library.py": {
+      "bytes": 5585,
+      "sha256": "66b6eb758472872826771e320406eedf0dd6d5eaa51c344e576aefcd12872bc3"
+    },
+    "awf/docs/adr/0016-bundle-small-reusable-scientific-artifacts.md": {
+      "bytes": 1462,
+      "sha256": "d44464a728834ca3295fc906631f3e3f084722995bac8bb32197417ad76cafad"
+    },
+    "awf/docs/adr/0017-public-opv-library-sanitization.md": {
+      "bytes": 1439,
+      "sha256": "5a5c881043832e5059f42a1c0ba426e5e393b464462f97eabb53a409ec9b3619"
+    },
+    "awf/docs/adr/0018-public-opv-workflow-closure.md": {
+      "bytes": 1612,
+      "sha256": "835be920eddd591f822ea4dff7a3504ca4191efa6e5a9ed9b642e3fadd37d742"
+    },
+    "awf/registry.fragment.json": {
+      "bytes": 2014,
+      "sha256": "39fa56bd809b28a903a87f8ca550909599623dc5b3cf8135f03bee8f077255be"
+    },
+    "awf/workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/versions.lock": {
+      "bytes": 460,
+      "sha256": "135b109fd276c694e56edd3c8606a1d8198ecfd1ea49d1cb9969d161c116e53f"
+    },
+    "awf/workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/workflow.yaml": {
+      "bytes": 3444,
+      "sha256": "0b0009bda9d2d21851306fb3c76d5d90185ae589983082c725693bdbcb9c81de"
+    },
+    "verify.py": {
+      "bytes": 2194,
+      "sha256": "940921cd5ef9bcd9b421a76c86434c422c0cb1dc7616f171f4f33d5b7aea0af7"
+    }
+  }
+}

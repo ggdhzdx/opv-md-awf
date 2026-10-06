@@ -1,0 +1,18 @@
+basename	unique_hashes	paths	interpretation
+AAC_A.frg	6	sources/source-01-aqx/AAC_A.frg | sources/source-02-l8bo/AAC_A.frg | sources/source-04-stbu/AAC_A.frg | sources/source-05-nfa-forcefield/AAC_A.frg | sources/source-07-nfa/AAC_A.frg | sources/source-08-nfa/AAC_A.frg | sources/source-09-nfa/AAC_A.frg	name_collision_review_required
+ADN_D.frg	4	sources/source-01-aqx/ADN_D.frg | sources/source-02-l8bo/ADN_D.frg | sources/source-04-stbu/ADN_D.frg | sources/source-08-nfa/ADN_D.frg | sources/source-09-nfa/ADN_D.frg	name_collision_review_required
+ALL.frg	13	sources/source-01-aqx/ALL.frg | sources/source-02-l8bo/ALL.frg | sources/source-03-qde/ALL.frg | sources/source-04-stbu/ALL.frg | sources/source-05-nfa-forcefield/ALL.frg | sources/source-06-pm6/ALL.frg | sources/source-07-nfa/ALL.frg | sources/source-08-nfa/ALL.frg | sources/source-09-nfa/ALL.frg | sources/source-10-l8-derivatives/ALL.frg | sources/source-11-p3ht/ALL.frg | sources/source-12-legacy/ALL.frg | sources/source-13-nfa/ALL.frg	name_collision_review_required
+AR2_Y.frg	2	sources/source-07-nfa/AR2_Y.frg | sources/source-08-nfa/AR2_Y.frg	name_collision_review_required
+ARC_Y.frg	1	sources/source-02-l8bo/ARC_Y.frg | sources/source-04-stbu/ARC_Y.frg	same_content_duplicate
+ARS_X.frg	2	sources/source-02-l8bo/ARS_X.frg | sources/source-04-stbu/ARS_X.frg | sources/source-09-nfa/ARS_X.frg	name_collision_review_required
+C24.pdb	1	sources/source-01-aqx/C24.pdb | sources/source-02-l8bo/C24.pdb | sources/source-04-stbu/C24.pdb | sources/source-10-l8-derivatives/C24.pdb	same_content_duplicate
+C24.top	1	sources/source-01-aqx/C24.top | sources/source-02-l8bo/C24.top | sources/source-04-stbu/C24.top | sources/source-10-l8-derivatives/C24.top	same_content_duplicate
+C46.pdb	2	sources/source-01-aqx/C46.pdb | sources/source-10-l8-derivatives/C46.pdb	name_collision_review_required
+C46.top	1	sources/source-01-aqx/C46.top | sources/source-10-l8-derivatives/C46.top	same_content_duplicate
+C46T.pdb	1	sources/source-02-l8bo/C46T.pdb | sources/source-03-qde/C46T.pdb | sources/source-04-stbu/C46T.pdb | sources/source-10-l8-derivatives/C46T.pdb	same_content_duplicate
+C46T.top	1	sources/source-02-l8bo/C46T.top | sources/source-03-qde/C46T.top | sources/source-04-stbu/C46T.top | sources/source-10-l8-derivatives/C46T.top	same_content_duplicate
+DDN_D.frg	2	sources/source-06-pm6/DDN_D.frg | sources/source-07-nfa/DDN_D.frg	name_collision_review_required
+PHT.gro	2	molecules/polymer/P3HT_PHT/PHT.gro | sources/source-11-p3ht/PHT.gro	name_collision_review_required
+PHT.top	2	molecules/polymer/P3HT_PHT/PHT.top | sources/source-11-p3ht/PHT.top	name_collision_review_required
+Y6core.pdb	1	sources/source-02-l8bo/Y6core.pdb | sources/source-04-stbu/Y6core.pdb | sources/source-10-l8-derivatives/Y6core.pdb	same_content_duplicate
+Y6core.top	1	sources/source-02-l8bo/Y6core.top | sources/source-04-stbu/Y6core.top | sources/source-10-l8-derivatives/Y6core.top	same_content_duplicate

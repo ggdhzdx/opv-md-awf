@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "skill.analyze-opv-morphology",
+  "kind": "skill",
+  "releases": {
+    "1.0.0-rc.1": {
+      "status": "candidate",
+      "observed_at": "2026-09-24",
+      "entry_point": "SKILL.md",
+      "source_snapshot": "components/skills/analyze-opv-morphology/releases/1.0.0-rc.1/source",
+      "tree_sha256": "f7aa89fa61c69dc72305c34870a18229f36696d552b57c927011445f60104681",
+      "capabilities": [
+        "opv-bulkgraph-contact-and-stacking-analysis",
+        "nanoscale-phase-separation-structure-factor",
+        "gaussian-filtered-composition-variance",
+        "paired-replica-contrast-synthesis"
+      ],
+      "limitations": [
+        "requires explicit project authorization and frozen analysis manifest",
+        "requires a compatible program run guide or recorded baseline reset",
+        "candidate pending independent adapter and real multi-system cohort acceptance"
+      ],
+      "provenance": "Generalized decision guidance from audited D18/NFA morphology and phase-separation analysis; project-specific chemistry and trajectory data are excluded."
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "replicas_minimum": 3,
+  "analysis_window": {
+    "start_time_ps": 5000.0,
+    "end_time_ps": 10000.0,
+    "cadence_ps": 20.0,
+    "expected_frames": 251
+  },
+  "modules": [
+    {
+      "id": "bulkgraph",
+      "contact_cutoff_nm": 0.45,
+      "stacking": {
+        "tilt_angle_max_deg": 30.0,
+        "normal_projection_min_nm": 0.25,
+        "heavy_atom_distance_max_nm": 0.36,
+        "sensitivities": {
+          "distance_040_nm": 0.40,
+          "angle_025_deg": 25.0,
+          "angle_035_deg": 35.0
+        }
+      },
+      "cofacial_area": {
+        "engine": "numpy_bondi_vdw_grid_refinement",
+        "h_init_nm": 0.01,
+        "levels": ["h", "h/2", "h/4"],
+        "tol_abs_nm2": 0.001,
+        "tol_rel": 0.002,
+        "fail_closed_status": "BLOCKED_NUMERICAL_CONVERGENCE"
+      }
+    },
+    {
+      "id": "phase_separation",
+      "grid_spacing_nm_primary": 0.20,
+      "grid_spacing_nm_secondary": 0.25,
+      "mass_assignment": "cloud_in_cell_trilinear",
+      "fluctuation_centering": "spatial_mean",
+      "structure_factor_scc": {
+        "fft_power_spectrum": true,
+        "integer_shell_alignment": "lowest_common_shell_contiguous",
+        "unresolved_scale_rules": {
+          "require_interior_peak": true,
+          "exclude_qmin": true,
+          "require_discrete_curvature": true,
+          "box_scale_limited_state": "box_scale_limited",
+          "fallback_state": "no_resolved_characteristic_scale"
+        }
+      },
+      "gaussian_filtered_variance_sigma_nm": [1.0, 2.0, 3.0]
+    }
+  ],
+  "statistical_hierarchy": {
+    "aggregation": "replica_first_time_average",
+    "contrasts": "matched_pairwise_differences",
+    "forbidden": [
+      "single_frame_evaluation",
+      "pseudo_precise_p_values_on_autocorrelated_frames",
+      "thermodynamic_equilibrium_claims",
+      "flory_huggins_chi_parameter_estimation",
+      "macroscopic_phase_separation_claims",
+      "device_performance_causal_claims"
+    ]
+  },
+  "interpretation": "fixed-protocol conditioned quenched morphology; contact, stacking, and nanoscale composition heterogeneity observations; not thermodynamic equilibrium or macroscopic phase separation"
+}

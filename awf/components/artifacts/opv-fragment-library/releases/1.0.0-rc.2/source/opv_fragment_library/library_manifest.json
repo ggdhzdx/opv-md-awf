@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "library_id": "opv-fragment-and-molecule-library",
+  "release": "1.0-public-20261005",
+  "created_at": "2026-09-15",
+  "scope": "portable public OPV NFA/polymer and ztop fragment resources",
+  "copy_policy": {
+    "included": [
+      ".frg",
+      ".pdb",
+      ".top",
+      ".itp",
+      ".gro",
+      "selected .gjf",
+      "selected .log"
+    ],
+    "excluded": [
+      ".chk",
+      ".fchk",
+      "Gaussian inputs",
+      "Gaussian output logs",
+      "checkpoints",
+      "large scan outputs",
+      "person-identifying source directory labels",
+      "private absolute paths",
+      "trajectories"
+    ],
+    "source_preserved": true,
+    "overwrite_history": false
+  },
+  "inventory": {
+    "fragment_source_sets": 13,
+    "fragment_files": 85,
+    "ztop_fragment_records": 91,
+    "pdb_files": 51,
+    "top_files": 59,
+    "itp_files": 2,
+    "approximate_size": "31 MB",
+    "gro_files": 9
+  },
+  "status_policy": {
+    "current_l8_derivatives": "validated_or_historical_audited",
+    "other_sources": "source_present_needs_context_audit",
+    "usable_pair_definition": "frg-referenced coordinate and topology both exist in the same source set",
+    "scientific_validation_required": [
+      "attachment sites",
+      "valence",
+      "atom order",
+      "charge",
+      "force-field compatibility",
+      "single-molecule GROMACS stability"
+    ]
+  },
+  "entry_points": {
+    "fragment_catalog": "index/fragment_catalog.tsv",
+    "molecule_catalog": "index/molecule_catalog.tsv",
+    "source_sets": "index/source_sets.tsv",
+    "name_collisions": "index/name_collisions.tsv",
+    "checksums": "index/SHA256SUMS",
+    "current_l8_ztop_library": "sources/source-10-l8-derivatives/ALL.frg",
+    "library_cli": "../tools/opv_library.py",
+    "library_cli_tests": "../tools/test_opv_library.py"
+  },
+  "tool_validation": {
+    "status": "project_positive_and_negative_tests_passed",
+    "commands": [
+      "python tools/opv_library.py verify",
+      "PYTHONPATH=tools python -m unittest -v tools/test_opv_library.py"
+    ],
+    "scope": "catalog/reference/package integrity only; no chemical compatibility or scientific performance claim"
+  },
+  "awf_status": "bundled public Artifact candidate",
+  "awf_tool_candidate": "tool.opv-library@1.0.0-rc.1",
+  "awf_artifact": "artifact.opv-fragment-library@1.0.0-rc.2"
+}

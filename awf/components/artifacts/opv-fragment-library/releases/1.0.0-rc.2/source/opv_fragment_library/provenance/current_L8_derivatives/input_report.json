@@ -1,0 +1,301 @@
+{
+  "status": "inputs generated for review; not submitted",
+  "historical_baseline": "private-source://redacted/C46_beta_thiophene.gjf",
+  "fragment_cap": "monosubstituted thiophene",
+  "fragments": [
+    {
+      "name": "Cb1T",
+      "meaning": "thiophene-CH2-cyclobutyl; L8_4-Cb short outer sidechain",
+      "input_smiles": "c1cc(sc1)CC2CCC2",
+      "canonical_smiles": "c1csc(CC2CCC2)c1",
+      "formula": "C9H12S",
+      "formal_charge": 0,
+      "multiplicity": 1,
+      "atoms_total": 22,
+      "heavy_atoms": 10,
+      "random_seed": 20260811,
+      "conformer_selection": {
+        "generated_conformers": 63,
+        "converged_clash_free_conformers": 63,
+        "minimum_mmff94_energy_kcal_mol": 17.981078,
+        "selection_energy_window_kcal_mol": 25.0,
+        "selected_source_conformer_id": 57,
+        "selected_mmff94_energy_kcal_mol": 17.981078,
+        "selected_relative_energy_kcal_mol": 0.0,
+        "selected_maximum_heavy_extent_A": 6.5623,
+        "selected_minimum_nonlocal_heavy_distance_A": 3.6038
+      },
+      "fragment_boundary": {
+        "sidechain_atom_1based": 6,
+        "thiophene_atom_1based": 3,
+        "ztop_cut_site": "X2:6-3",
+        "retained_side": "sidechain_atom"
+      },
+      "gaussian": {
+        "route": "#p opt pbe1pbe def2svp emp(gd3bj) scf(maxcycle=64) iop(5/13=1) scrf(solvent=diphenylether) geom(connectivity)",
+        "nproc": 32,
+        "memory": "100GB",
+        "gjf": "private-source://redacted/Cb1T.gjf",
+        "gjf_sha256": "81575d77fb1b691154d4d79ed3287fdb1d7f80083a8862aca45ed1fd680a3cd7"
+      }
+    },
+    {
+      "name": "Cb3T",
+      "meaning": "thiophene-(CH2)3-cyclobutyl; L8-Cb4 cyclobutyl sidechain",
+      "input_smiles": "c1cc(sc1)CCCC2CCC2",
+      "canonical_smiles": "c1csc(CCCC2CCC2)c1",
+      "formula": "C11H16S",
+      "formal_charge": 0,
+      "multiplicity": 1,
+      "atoms_total": 28,
+      "heavy_atoms": 12,
+      "random_seed": 20260812,
+      "conformer_selection": {
+        "generated_conformers": 180,
+        "converged_clash_free_conformers": 180,
+        "minimum_mmff94_energy_kcal_mol": 17.794328,
+        "selection_energy_window_kcal_mol": 25.0,
+        "selected_source_conformer_id": 36,
+        "selected_mmff94_energy_kcal_mol": 18.759828,
+        "selected_relative_energy_kcal_mol": 0.9655,
+        "selected_maximum_heavy_extent_A": 8.8097,
+        "selected_minimum_nonlocal_heavy_distance_A": 4.1943
+      },
+      "fragment_boundary": {
+        "sidechain_atom_1based": 6,
+        "thiophene_atom_1based": 3,
+        "ztop_cut_site": "X2:6-3",
+        "retained_side": "sidechain_atom"
+      },
+      "gaussian": {
+        "route": "#p opt pbe1pbe def2svp emp(gd3bj) scf(maxcycle=64) iop(5/13=1) scrf(solvent=diphenylether) geom(connectivity)",
+        "nproc": 32,
+        "memory": "100GB",
+        "gjf": "private-source://redacted/Cb3T.gjf",
+        "gjf_sha256": "176729329e68b165f2347524d383e52f088c617c756ca246418e083f9fc8a243"
+      }
+    },
+    {
+      "name": "C46T_sp3",
+      "meaning": "thiophene-(CH2)3-CH(C4H9)(C6H13); L8_4-Cb long outer sidechain",
+      "input_smiles": "c1cc(sc1)CCCC(CCCC)CCCCCC",
+      "canonical_smiles": "CCCCCCC(CCCC)CCCc1cccs1",
+      "formula": "C18H32S",
+      "formal_charge": 0,
+      "multiplicity": 1,
+      "atoms_total": 51,
+      "heavy_atoms": 19,
+      "random_seed": 20260813,
+      "conformer_selection": {
+        "generated_conformers": 256,
+        "converged_clash_free_conformers": 256,
+        "minimum_mmff94_energy_kcal_mol": 10.190235,
+        "selection_energy_window_kcal_mol": 25.0,
+        "selected_source_conformer_id": 249,
+        "selected_mmff94_energy_kcal_mol": 19.112659,
+        "selected_relative_energy_kcal_mol": 8.922424,
+        "selected_maximum_heavy_extent_A": 13.7154,
+        "selected_minimum_nonlocal_heavy_distance_A": 3.4792,
+        "post_selection_straightening": {
+          "definition": "selected rotatable alkyl torsions constrained to 175-180 degrees; tetrahedral branch-center bond angles retained",
+          "mmff94_constrained_status": 0,
+          "mmff94_constrained_energy_kcal_mol": 20.087569,
+          "maximum_heavy_extent_A": 15.0773,
+          "minimum_nonlocal_heavy_distance_A": 3.282,
+          "hard_clashes": 0,
+          "linearity_before": {
+            "short_C4_branch": {
+              "atom_path_1based": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "end_to_end_A": 5.2358,
+              "bonded_contour_A": 10.7396,
+              "linearity_ratio": 0.487523
+            },
+            "long_C6_branch": {
+              "atom_path_1based": [
+                6,
+                7,
+                8,
+                9,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "end_to_end_A": 9.9356,
+              "bonded_contour_A": 13.8092,
+              "linearity_ratio": 0.719489
+            }
+          },
+          "linearity_after": {
+            "short_C4_branch": {
+              "atom_path_1based": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "end_to_end_A": 8.12,
+              "bonded_contour_A": 10.7652,
+              "linearity_ratio": 0.754285
+            },
+            "long_C6_branch": {
+              "atom_path_1based": [
+                6,
+                7,
+                8,
+                9,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "end_to_end_A": 11.3242,
+              "bonded_contour_A": 13.8256,
+              "linearity_ratio": 0.819076
+            }
+          },
+          "final_torsions": [
+            {
+              "atoms_1based": [
+                2,
+                3,
+                6,
+                7
+              ],
+              "dihedral_deg": 175.0
+            },
+            {
+              "atoms_1based": [
+                3,
+                6,
+                7,
+                8
+              ],
+              "dihedral_deg": -180.0
+            },
+            {
+              "atoms_1based": [
+                6,
+                7,
+                8,
+                9
+              ],
+              "dihedral_deg": 174.9998
+            },
+            {
+              "atoms_1based": [
+                7,
+                8,
+                9,
+                14
+              ],
+              "dihedral_deg": -179.9997
+            },
+            {
+              "atoms_1based": [
+                8,
+                9,
+                10,
+                11
+              ],
+              "dihedral_deg": -179.9999
+            },
+            {
+              "atoms_1based": [
+                9,
+                10,
+                11,
+                12
+              ],
+              "dihedral_deg": 174.9994
+            },
+            {
+              "atoms_1based": [
+                10,
+                11,
+                12,
+                13
+              ],
+              "dihedral_deg": 179.5501
+            },
+            {
+              "atoms_1based": [
+                8,
+                9,
+                14,
+                15
+              ],
+              "dihedral_deg": 174.9991
+            },
+            {
+              "atoms_1based": [
+                9,
+                14,
+                15,
+                16
+              ],
+              "dihedral_deg": -179.9995
+            },
+            {
+              "atoms_1based": [
+                14,
+                15,
+                16,
+                17
+              ],
+              "dihedral_deg": 179.3008
+            },
+            {
+              "atoms_1based": [
+                15,
+                16,
+                17,
+                18
+              ],
+              "dihedral_deg": -180.0
+            },
+            {
+              "atoms_1based": [
+                16,
+                17,
+                18,
+                19
+              ],
+              "dihedral_deg": 179.996
+            }
+          ]
+        }
+      },
+      "fragment_boundary": {
+        "sidechain_atom_1based": 6,
+        "thiophene_atom_1based": 3,
+        "ztop_cut_site": "X2:6-3",
+        "retained_side": "sidechain_atom"
+      },
+      "gaussian": {
+        "route": "#p opt pbe1pbe def2svp emp(gd3bj) scf(maxcycle=64) iop(5/13=1) scrf(solvent=diphenylether) geom(connectivity)",
+        "nproc": 32,
+        "memory": "100GB",
+        "gjf": "private-source://redacted/C46T_sp3.gjf",
+        "gjf_sha256": "b6d11857e65d5c3b6780d5ee6ff05af7f027370aa65776bbe958de8e9f5ed248"
+      }
+    }
+  ]
+}

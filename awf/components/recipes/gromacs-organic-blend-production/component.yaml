@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "recipe.gromacs-organic-blend-production",
+  "kind": "recipe",
+  "releases": {
+    "1.0.0-rc.2": {
+      "status": "candidate",
+      "observed_at": "2026-10-05",
+      "instructions": "releases/1.0.0-rc.2/source/RECIPE.md",
+      "protocol": "releases/1.0.0-rc.2/source/protocol.json",
+      "source_snapshot": "components/recipes/gromacs-organic-blend-production/releases/1.0.0-rc.2/source",
+      "tree_sha256": "db0e04b855435c1a0bda2a3f87c18f54d66057f47478dc655b4d5dc809258380",
+      "predecessor": "recipe.gromacs-organic-blend-production@1.0.0-rc.1",
+      "capabilities": [
+        "matched-independent-packmol-replicas",
+        "staged-gromacs-compression-relaxation-annealing-hold",
+        "cohort-qc-gates",
+        "checkpoint-ancestry-and-fail-closed-resume"
+      ],
+      "limitations": [
+        "requires a project-specific molecular and cluster adapter",
+        "does not bundle target-project trajectories or checkpoints",
+        "candidate pending independent adapter and real replicated production acceptance"
+      ],
+      "provenance": "Public successor with neutral provenance and no private absolute paths; method semantics are unchanged from rc.1."
+    }
+  }
+}

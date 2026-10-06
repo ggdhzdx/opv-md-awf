@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "gromacs-organic-blend-zc",
+  "release": "1.0.0-rc.6",
+  "status": "candidate",
+  "purpose": "Prepare, run, resume, audit, and analyze matched replicated atomistic organic-blend morphology simulations with the bundled OPV fragment library, Packmol, GROMACS, and post-MD BulkGraph and nanoscale phase-separation analysis on the zc cluster.",
+  "entry_skills": [
+    "skill.run-gromacs-organic-blend",
+    "skill.analyze-opv-morphology"
+  ],
+  "stages": [
+    {
+      "id": "audit-and-parameterize-molecules",
+      "required": true,
+      "skill": "skill.run-gromacs-organic-blend",
+      "tool": "tool.opv-library",
+      "artifact": "artifact.opv-fragment-library"
+    },
+    {
+      "id": "freeze-project-adapter",
+      "required": true,
+      "skill": "skill.run-gromacs-organic-blend",
+      "recipe": "recipe.gromacs-organic-blend-production"
+    },
+    {
+      "id": "pack-independent-matched-replicas",
+      "required": true,
+      "skill": "skill.run-gromacs-organic-blend",
+      "recipe": "recipe.gromacs-organic-blend-production"
+    },
+    {
+      "id": "minimize-compress-relax-anneal-hold",
+      "required": true,
+      "skill": "skill.run-gromacs-organic-blend",
+      "recipe": "recipe.gromacs-organic-blend-production"
+    },
+    {
+      "id": "audit-checkpoint-ancestry-and-analyze",
+      "required": true,
+      "skill": "skill.run-gromacs-organic-blend",
+      "recipe": "recipe.gromacs-organic-blend-production"
+    },
+    {
+      "id": "bulkgraph-morphology-analysis",
+      "required": true,
+      "skill": "skill.analyze-opv-morphology",
+      "recipe": "recipe.opv-morphology-analysis"
+    },
+    {
+      "id": "phase-separation-heterogeneity-analysis",
+      "required": true,
+      "skill": "skill.analyze-opv-morphology",
+      "recipe": "recipe.opv-morphology-analysis"
+    },
+    {
+      "id": "cohort-contrast-and-synthesis",
+      "required": true,
+      "skill": "skill.analyze-opv-morphology",
+      "recipe": "recipe.opv-morphology-analysis"
+    }
+  ],
+  "engineering_gate": "The complete public dependency closure contains no private paths or generated caches; public-library sanitization, regenerated file checksums, catalog/reference integrity, and bundled OPV library manifest and 218 file checksums, input hashes, atom/topology order, matched seeds, independent replica ancestry, stage receipts, checkpoint ancestry, cohort gates, and post-MD morphology metric extraction must pass.",
+  "scientific_gate": "Force-field integrity and quenched morphology metrics characterize fixed-protocol packing and nanoscale heterogeneity; they do not establish thermodynamic equilibrium, electronic coupling, or causal solar cell device performance.",
+  "candidate_limitations": [
+    "GROMACS 2026.3 CUDA execution on the current zc GPU target has not yet been independently calibrated for this task class.",
+    "Post-MD morphology analysis profile on node01 Zen3 CPU is calibrated for 5, 25, and 100 frames with OPENBLAS_NUM_THREADS=1, but full 9-trajectory x 251-frame campaign timing is not yet validated.",
+    "The first project adapter and real three-chemistry by three-replica full production and post-MD analysis run are pending Codex review.",
+    "The complete public closure uses neutral provenance and the sanitized bundled library; target-project trajectories, checkpoints, results, runtimes, and adapters remain external."
+  ],
+  "version_lock": "versions.lock"
+}

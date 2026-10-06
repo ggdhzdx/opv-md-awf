@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "tool.opv-library",
+  "kind": "tool",
+  "releases": {
+    "1.0.0-rc.2": {
+      "status": "candidate",
+      "observed_at": "2026-10-05",
+      "capabilities": [
+        "bundled-opv-catalog-search",
+        "fragment-reference-integrity-check",
+        "molecule-package-completeness-check",
+        "single-source-set-ztop-plan-generation"
+      ],
+      "entry_point": "opv_library.py",
+      "source_snapshot": "components/tools/opv-library/releases/1.0.0-rc.2/source",
+      "tree_sha256": "2cfb714d80885c7ae118cc490937a833e8a9f3f0964a69ce8f9a20ebb0872b10",
+      "predecessor": "tool.opv-library@1.0.0-rc.1",
+      "limitations": [
+        "checks file/reference integrity only; it does not establish chemical compatibility",
+        "does not execute ztop or submit scientific jobs",
+        "mixed source sets are rejected because ztop references are basename-relative",
+        "requires the Workflow-locked public Artifact or an explicit --library path"
+      ],
+      "tests": [
+        "tests/test_opv_library.py"
+      ],
+      "provenance": "Public successor with source-relative bundled-Artifact discovery and no private absolute paths."
+    }
+  }
+}

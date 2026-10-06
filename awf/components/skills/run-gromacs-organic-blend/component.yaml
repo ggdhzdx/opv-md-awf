@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "skill.run-gromacs-organic-blend",
+  "kind": "skill",
+  "releases": {
+    "1.0.0-rc.1": {
+      "status": "candidate",
+      "observed_at": "2026-09-20",
+      "entry_point": "SKILL.md",
+      "source_snapshot": "components/skills/run-gromacs-organic-blend/releases/1.0.0-rc.1/source",
+      "tree_sha256": "e2ca15364e781faaeaf295a5d6d4bfebcd943d0173d88e23e49f7375e082926d",
+      "capabilities": [
+        "organic-blend-force-field-audit",
+        "matched-replica-production-orchestration",
+        "checkpoint-safe-resume",
+        "evidence-calibrated-morphology-analysis"
+      ],
+      "limitations": [
+        "requires explicit project authorization before formal jobs or scientific input changes",
+        "requires a compatible program run guide or a recorded baseline reset",
+        "candidate pending independent adapter and real replicated production acceptance"
+      ],
+      "provenance": "Generalized decision guidance from the audited D18/NFA production workflow; project-specific chemistry and outputs are excluded."
+    }
+  }
+}
