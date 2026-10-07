@@ -17,13 +17,13 @@
       "kind": "recipe"
     },
     {
-      "descriptor": "components/skills/analyze-opv-morphology/component.yaml",
-      "id": "skill.analyze-opv-morphology",
+      "descriptor": "components/skills/run-gromacs-organic-blend/component.yaml",
+      "id": "skill.run-gromacs-organic-blend",
       "kind": "skill"
     },
     {
-      "descriptor": "components/skills/run-gromacs-organic-blend/component.yaml",
-      "id": "skill.run-gromacs-organic-blend",
+      "descriptor": "components/skills/analyze-opv-morphology/component.yaml",
+      "id": "skill.analyze-opv-morphology",
       "kind": "skill"
     },
     {
@@ -34,21 +34,21 @@
   ],
   "workflows": [
     {
-      "id": "gromacs-organic-blend-zc",
-      "display_name": "AWF GROMACS Organic Blend",
       "aliases": [
         "opv-md"
       ],
-      "descriptor": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/workflow.yaml",
-      "descriptor_sha256": "0b0009bda9d2d21851306fb3c76d5d90185ae589983082c725693bdbcb9c81de",
-      "lock": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/versions.lock",
-      "lock_sha256": "135b109fd276c694e56edd3c8606a1d8198ecfd1ea49d1cb9969d161c116e53f",
+      "descriptor": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.7/workflow.yaml",
+      "descriptor_sha256": "3987f5489c7ee5f5e9c54674c9253c5d9571f3127eb799fae2f809b7753576cd",
+      "display_name": "AWF GROMACS Organic Blend",
+      "id": "gromacs-organic-blend-zc",
+      "lock": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.7/versions.lock",
+      "lock_sha256": "7126f2347b9b72435361f2b90c04c73904c3ad31cb115d664e5528450887d656",
       "releases": {
-        "1.0.0-rc.6": {
-          "descriptor": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/workflow.yaml",
-          "descriptor_sha256": "0b0009bda9d2d21851306fb3c76d5d90185ae589983082c725693bdbcb9c81de",
-          "lock": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/versions.lock",
-          "lock_sha256": "135b109fd276c694e56edd3c8606a1d8198ecfd1ea49d1cb9969d161c116e53f",
+        "1.0.0-rc.7": {
+          "descriptor": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.7/workflow.yaml",
+          "descriptor_sha256": "3987f5489c7ee5f5e9c54674c9253c5d9571f3127eb799fae2f809b7753576cd",
+          "lock": "workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.7/versions.lock",
+          "lock_sha256": "7126f2347b9b72435361f2b90c04c73904c3ad31cb115d664e5528450887d656",
           "status": "candidate"
         }
       }

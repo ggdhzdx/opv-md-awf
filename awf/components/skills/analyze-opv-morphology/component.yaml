@@ -3,24 +3,28 @@
   "id": "skill.analyze-opv-morphology",
   "kind": "skill",
   "releases": {
-    "1.0.0-rc.1": {
+    "1.0.0-rc.2": {
       "status": "candidate",
-      "observed_at": "2026-09-24",
+      "observed_at": "2026-10-07",
       "entry_point": "SKILL.md",
-      "source_snapshot": "components/skills/analyze-opv-morphology/releases/1.0.0-rc.1/source",
-      "tree_sha256": "f7aa89fa61c69dc72305c34870a18229f36696d552b57c927011445f60104681",
+      "source_snapshot": "components/skills/analyze-opv-morphology/releases/1.0.0-rc.2/source",
+      "tree_sha256": "1f665243bd4a3641e66639bd9cc2563b55902710e18678b95c89aeb7b165424c",
+      "predecessor": "skill.analyze-opv-morphology@1.0.0-rc.1",
+      "depends_on": [
+        "recipe.opv-morphology-analysis@1.0.0-rc.2"
+      ],
       "capabilities": [
-        "opv-bulkgraph-contact-and-stacking-analysis",
-        "nanoscale-phase-separation-structure-factor",
+        "executable-opv-bulkgraph-contact-and-stacking-analysis",
+        "executable-nanoscale-phase-separation-structure-factor",
         "gaussian-filtered-composition-variance",
-        "paired-replica-contrast-synthesis"
+        "replica-first-paired-contrast-synthesis"
       ],
       "limitations": [
-        "requires explicit project authorization and frozen analysis manifest",
-        "requires a compatible program run guide or recorded baseline reset",
-        "candidate pending independent adapter and real multi-system cohort acceptance"
+        "requires a frozen project manifest and input hash receipts",
+        "requires project-specific donor and acceptor selections",
+        "synthetic regression does not establish project scientific validity"
       ],
-      "provenance": "Generalized decision guidance from audited D18/NFA morphology and phase-separation analysis; project-specific chemistry and trajectory data are excluded."
+      "provenance": "Public Skill successor that names and gates the executable Recipe rc.2 entry points."
     }
   }
 }

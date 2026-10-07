@@ -4,11 +4,34 @@ This recipe defines a matched, replicated workflow for atomistic organic photovo
 (OPV) donor-acceptor blend morphology analysis. Molecular identities, trajectories,
 force-field files, coordinates, and machine paths are project data and remain in the project.
 
+## Executable entry points
+
+Install the source directory with `python -m pip install .`. NumPy-only
+BulkGraph analysis is available through `opv-bulkgraph`. Direct GROMACS
+TPR/XTC phase-separation analysis additionally requires
+`python -m pip install '.[gromacs]'` and runs through
+`opv-phase-separation`.
+
+```bash
+opv-bulkgraph --manifest bulkgraph-input.json --output bulkgraph-result.json
+
+opv-phase-separation --mode full_run --tpr production.tpr \
+  --xtc production.xtc --out-dir phase-results \
+  --donor-selection 'resname DON' --acceptor-selection 'resname ACC'
+```
+
+The BulkGraph JSON manifest references an NPZ file containing `coordinates`,
+`box`, and `elements`. It declares each molecule's `conjugated_indices` and
+three planar fragment index sets named `core`, `terminal_left`, and
+`terminal_right`. Coordinates and boxes use nanometers. The CLI refuses to
+overwrite an existing output file and confines the NPZ reference under the
+manifest directory.
+
 ## Required project adapter
 
 The project must provide a machine-readable manifest containing:
 
-- two or more named blend systems (e.g. `D18_A-CH3`, `D18_A-CF3`, `D18_A-Ph`);
+- two or more named donor-acceptor blend systems;
 - at least three independent replicas (`r01`, `r02`, `r03`);
 - trajectory paths with two-phase SHA-256 digest validation against production manifests;
 - analysis window definition: 5.0–10.0 ns (5000.0–10000.0 ps) with 20.0 ps cadence (251 frames);

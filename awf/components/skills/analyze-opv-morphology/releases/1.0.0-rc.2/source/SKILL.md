@@ -8,6 +8,12 @@ description: Execute and audit atomistic organic photovoltaic (OPV) donor-accept
 Build a project-specific adapter around the locked AWF recipe. Keep all
 molecular inputs, trajectories, and scientific results in the project.
 
+This rc.2 Skill requires the executable Recipe rc.2. Use `opv-bulkgraph` for
+the portable NumPy NPZ/JSON adapter and `opv-phase-separation` for GROMACS
+TPR/XTC input through the optional MDAnalysis dependency. Do not substitute a
+single-frame notebook or an undocumented project script for these locked
+entry points.
+
 ## Before execution
 
 1. Read the project authorization, method confirmations, and applicable cluster run guides.
@@ -42,7 +48,9 @@ molecular inputs, trajectories, and scientific results in the project.
   * NO claim of macroscopic phase separation (finite ~10 nm box over 10 ns cannot demonstrate macroscopic phase separation).
   * NO causal claims linking contact/stacking/heterogeneity metrics to device solar cell performance ($V_{\text{oc}}, J_{\text{sc}}, \text{FF}, \text{PCE}$).
 
-## Candidate boundary
+## Evidence boundary
 
-This rc.1 release captures workflow decisions and mathematical gates. It is not adoptable
-until multi-system replicated production acceptance verifies the locked behavior.
+The executable synthetic regression verifies numerical contracts and failure
+behavior. A project result still requires input hash receipts, the full
+replicated frame window, project selections, and cohort-level review before
+scientific interpretation.

@@ -3,26 +3,31 @@
   "id": "recipe.opv-morphology-analysis",
   "kind": "recipe",
   "releases": {
-    "1.0.0-rc.1": {
+    "1.0.0-rc.2": {
       "status": "candidate",
-      "observed_at": "2026-09-24",
-      "instructions": "releases/1.0.0-rc.1/source/RECIPE.md",
-      "protocol": "releases/1.0.0-rc.1/source/protocol.json",
-      "source_snapshot": "components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source",
-      "tree_sha256": "088bd5fac87bdb1298efbabb4358bee2a98a6f681397cbf8310072537917225d",
+      "observed_at": "2026-10-07",
+      "instructions": "releases/1.0.0-rc.2/source/RECIPE.md",
+      "protocol": "releases/1.0.0-rc.2/source/protocol.json",
+      "source_snapshot": "components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source",
+      "tree_sha256": "6082565784d39ad537e4f518262c0d4128e0f81a3e23749e3aabac816cdbc587",
+      "predecessor": "recipe.opv-morphology-analysis@1.0.0-rc.1",
+      "entry_points": [
+        "opv-bulkgraph",
+        "opv-phase-separation"
+      ],
       "capabilities": [
-        "parallel-bulkgraph-and-phase-separation-orchestration",
+        "executable-bulkgraph-contact-and-stacking-analysis",
         "svd-planar-stacking-and-adaptive-overlap-area",
         "periodic-cic-density-and-fft-structure-factor",
         "box-scale-limited-and-unresolved-peak-gates",
-        "replica-first-paired-contrast-hierarchy"
+        "portable-npz-json-and-optional-gromacs-adapters"
       ],
       "limitations": [
-        "requires a project-specific molecular, topology, and trajectory adapter",
-        "does not bundle trajectories, topologies, or project outputs",
-        "candidate pending independent adapter and real multi-system cohort acceptance"
+        "BulkGraph executable currently requires an orthorhombic box",
+        "GROMACS TPR/XTC loading requires the optional MDAnalysis dependency",
+        "project selections and replicated production evidence remain external"
       ],
-      "provenance": "Generalized from audited D18/NFA BulkGraph and phase-separation analysis implementations and regression suites."
+      "provenance": "Public executable successor generalized from audited donor/acceptor analysis algorithms; project paths, chemistry identities, trajectories and results are excluded."
     }
   }
 }

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awf-opv-morphology-analysis"
+version = "1.0.0rc2"
+description = "Portable BulkGraph and phase-separation analysis for AWF OPV-MD"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+gromacs = ["MDAnalysis>=2.7"]
+
+[project.scripts]
+opv-bulkgraph = "opv_morphology.bulkgraph_cli:main"
+opv-phase-separation = "opv_morphology.phase_separation:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["opv_morphology*"]

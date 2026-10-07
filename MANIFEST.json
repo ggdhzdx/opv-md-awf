@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "workflow": "gromacs-organic-blend-zc",
-  "workflow_release": "1.0.0-rc.6",
+  "workflow_release": "1.0.0-rc.7",
   "files": {
     ".gitignore": {
-      "bytes": 25,
-      "sha256": "1add4d1fe11afa97bb8684ddfb7a362938df465094367a04fdbd5ae97b1c6856"
+      "bytes": 34,
+      "sha256": "53b7397181bb11a55fbd73696ae0e7faaf146450f3b5b5f80e5a257347a9416f"
     },
     "DATA-NOTICE.md": {
       "bytes": 571,
@@ -20,12 +20,12 @@
       "sha256": "0ace87f3660f9dc6a2407cb0ed59ab3491579fbcfdabdeb265cc85aeab9c737e"
     },
     "README.md": {
-      "bytes": 1640,
-      "sha256": "e0b42be3b4289fef24c78b46d36707d431bad476b311f690b3d41a7aa4c3919a"
+      "bytes": 2047,
+      "sha256": "c3ccd0eacae3250bf16513342552f601c5cd763f381f2c330f5cb1dcdeaf46af"
     },
     "THIRD-PARTY-NOTICES.md": {
-      "bytes": 307,
-      "sha256": "3e786758d0eecc1f258c9ddcfa56611a16437959a8ab41614c9018bcdd56d310"
+      "bytes": 294,
+      "sha256": "37417ecc161e2168c993406b874d342488ecdc3734d8505ae407c35a8d5d6b35"
     },
     "awf/components/artifacts/opv-fragment-library/component.yaml": {
       "bytes": 1930,
@@ -928,28 +928,68 @@
       "sha256": "f42b27a6683bd273f95ca4ab169dafedffb25115b0862d06ad20f8c353a89064"
     },
     "awf/components/recipes/opv-morphology-analysis/component.yaml": {
-      "bytes": 1236,
-      "sha256": "eba347f93a95d2e312a7a8855cf0f5d7b492c854000c9e0db7bcc6caa6e8c28b"
+      "bytes": 1436,
+      "sha256": "341595d13aa59539b6e79199d573bc3d5cc1e387685ad14c695213710e838218"
     },
-    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source/PROVENANCE.md": {
-      "bytes": 1262,
-      "sha256": "aae687894c7e501bc8264aac5dd47c56897385b1d5a01a52f662615c2b28137e"
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/PROVENANCE.md": {
+      "bytes": 668,
+      "sha256": "5718290feb958cf04b1ec6c9c99c835cc5aaa7b045f6d623a003f99eaa5a6daf"
     },
-    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source/RECIPE.md": {
-      "bytes": 3785,
-      "sha256": "5b4b8000bcca7f003e00905a0250be61751a6ded93706c8e9b0b527a5a5cc482"
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/RECIPE.md": {
+      "bytes": 4724,
+      "sha256": "6867d40b1e545c5059bf9299f5a472cd3bb8afa5bd39533b4fcfda355688d263"
     },
-    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.1/source/protocol.json": {
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/__init__.py": {
+      "bytes": 86,
+      "sha256": "d241f822855895bf19abd23fe4fb70faeff807e16c4de9aec424b730a69b8116"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/bulkgraph_cli.py": {
+      "bytes": 5202,
+      "sha256": "104ed1a9eee78c85f43fe1bb75e853e87516ff348083075c21fc8b577dbf659b"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/bulkgraph_core/__init__.py": {
+      "bytes": 896,
+      "sha256": "4177531342f4ad19715059c892bb8532175ec1559e7cedb2562366a6597aa422"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/bulkgraph_core/geometry.py": {
+      "bytes": 5545,
+      "sha256": "3ba75c78f76844dabf3e4d0d1ca741a7327551baad096d25d0a39bf93c25e809"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/bulkgraph_core/graph.py": {
+      "bytes": 13210,
+      "sha256": "680b652342a91093760608cb84239d9e358d67083c9faf5c8251f06e5616963c"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/bulkgraph_core/stacking.py": {
+      "bytes": 9208,
+      "sha256": "b73c02330da13a5729164f1e56d7444de303bff059c54d95f50e11f7329b243c"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/bulkgraph_core/topology.py": {
+      "bytes": 4211,
+      "sha256": "73b770f045a796e31e4d9140e204de3698fd5cf3adacc1253b2f9ed1048d831d"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/opv_morphology/phase_separation.py": {
+      "bytes": 34623,
+      "sha256": "cc6af5673605d7fe68134fac9b24462e02696f184e6f572dd028967ee2e91ef6"
+    },
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/protocol.json": {
       "bytes": 2182,
       "sha256": "d27258d44945448913bced964c4a1762b127f428da8fbb82773a0b5265fd2418"
     },
-    "awf/components/skills/analyze-opv-morphology/component.yaml": {
-      "bytes": 1105,
-      "sha256": "5d2a2ff24997a6480f2dbc0a0acf0823ed9f14fce704fcd0a8939b384f01b020"
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/pyproject.toml": {
+      "bytes": 565,
+      "sha256": "0c69b5386bc8df3f923464e89a0f898e074890b3434e7c9b4bfba315fc266b0f"
     },
-    "awf/components/skills/analyze-opv-morphology/releases/1.0.0-rc.1/source/SKILL.md": {
-      "bytes": 4018,
-      "sha256": "67e049b952621581adf0350284d54dcc63c2f0855b48b126a2f2089c4f86d045"
+    "awf/components/recipes/opv-morphology-analysis/releases/1.0.0-rc.2/source/tests/test_executable_analysis.py": {
+      "bytes": 3689,
+      "sha256": "fef165aad494f33e3bb0340c8637134eb792de204eed429badfc14683eee25f0"
+    },
+    "awf/components/skills/analyze-opv-morphology/component.yaml": {
+      "bytes": 1180,
+      "sha256": "c5bbd7c00b6263f885897a0c523f1d570c99370c306903ad121844ce5bfca375"
+    },
+    "awf/components/skills/analyze-opv-morphology/releases/1.0.0-rc.2/source/SKILL.md": {
+      "bytes": 4415,
+      "sha256": "a3e5146cb3a25a043551b338f8e8e6ab5926a12652b2f2a71973cfeeac4c078e"
     },
     "awf/components/skills/run-gromacs-organic-blend/component.yaml": {
       "bytes": 1083,
@@ -991,21 +1031,25 @@
       "bytes": 1612,
       "sha256": "835be920eddd591f822ea4dff7a3504ca4191efa6e5a9ed9b642e3fadd37d742"
     },
+    "awf/docs/adr/0021-opv-analysis-executable-closure.md": {
+      "bytes": 1506,
+      "sha256": "8df08008b166d68b227bdf5729af2e390428e1097b9866c17263108b7fa0d844"
+    },
     "awf/registry.fragment.json": {
       "bytes": 2014,
-      "sha256": "39fa56bd809b28a903a87f8ca550909599623dc5b3cf8135f03bee8f077255be"
+      "sha256": "4eff1ee1d6afa8fc03c8350ab576c9f6e8aa9891fa3677ca06d6d2d4d73c9341"
     },
-    "awf/workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/versions.lock": {
+    "awf/workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.7/versions.lock": {
       "bytes": 460,
-      "sha256": "135b109fd276c694e56edd3c8606a1d8198ecfd1ea49d1cb9969d161c116e53f"
+      "sha256": "7126f2347b9b72435361f2b90c04c73904c3ad31cb115d664e5528450887d656"
     },
-    "awf/workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.6/workflow.yaml": {
-      "bytes": 3444,
-      "sha256": "0b0009bda9d2d21851306fb3c76d5d90185ae589983082c725693bdbcb9c81de"
+    "awf/workflows/gromacs-organic-blend-zc/releases/1.0.0-rc.7/workflow.yaml": {
+      "bytes": 3454,
+      "sha256": "3987f5489c7ee5f5e9c54674c9253c5d9571f3127eb799fae2f809b7753576cd"
     },
     "verify.py": {
-      "bytes": 2194,
-      "sha256": "940921cd5ef9bcd9b421a76c86434c422c0cb1dc7616f171f4f33d5b7aea0af7"
+      "bytes": 3740,
+      "sha256": "3aa46110484d22ec7320222d9ee3b8bee412a682b314aae98e8edecf7a087513"
     }
   }
 }
